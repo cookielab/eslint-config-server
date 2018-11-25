@@ -1,3 +1,3 @@
-const config = require('./config/config-flow');
+const config = require('./config-flow');
 
 module.exports = config;
