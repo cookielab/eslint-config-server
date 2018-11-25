@@ -1,19 +1,10 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-        "es6": true,
-        "node": true,
-        "jasmine": true,
-        "jest": true
-    },
     "plugins": [
         "@cookielab.io/custom-rules"
     ],
     "extends": [
-        "./config/native.js",
-        "./config/flow.js",
-        "./config/filenames.js",
-        "./config/import.js"
+        "./config/config.js",
+        "./config/flow.js"
     ],
     "rules": {
         "@cookielab.io/custom-rules/sort-imports": ["error"]
