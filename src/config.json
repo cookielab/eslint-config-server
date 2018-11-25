@@ -13,8 +13,7 @@
         "./config/native.js",
         "./config/flow.js",
         "./config/filenames.js",
-        "plugin:import/errors",
-        "plugin:import/warnings"
+        "./config/import.js"
     ],
     "rules": {
         "@cookielab.io/custom-rules/sort-imports": ["error"]
