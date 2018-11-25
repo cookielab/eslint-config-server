@@ -3,8 +3,8 @@ module.exports = {
         '@cookielab.io/custom-rules',
     ],
     extends: [
-        './config.js',
-        './flow.js',
+        './src/index.js',
+        './src/flow.js',
     ],
     rules: {
         '@cookielab.io/custom-rules/sort-imports': 'error',
