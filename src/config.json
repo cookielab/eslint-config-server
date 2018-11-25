@@ -7,18 +7,16 @@
         "jest": true
     },
     "plugins": [
-        "filenames",
         "@cookielab.io/custom-rules"
     ],
     "extends": [
         "./config/native.js",
         "./config/flow.js",
+        "./config/filenames.js",
         "plugin:import/errors",
         "plugin:import/warnings"
     ],
     "rules": {
-        "filenames/match-regex": ["error", "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)*$"],
-
         "@cookielab.io/custom-rules/sort-imports": ["error"]
     }
 }
