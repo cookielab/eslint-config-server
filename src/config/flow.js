@@ -1,0 +1,52 @@
+module.exports = {
+    plugins: [
+        'flowtype',
+    ],
+    rules: {
+        'flowtype/array-style-complex-type': 'off',
+        'flowtype/array-style-simple-type': 'off',
+        'flowtype/boolean-style': ['error', 'boolean'],
+        'flowtype/define-flow-type': 'warn',
+        'flowtype/delimiter-dangle': ['error', 'only-multiline'],
+        'flowtype/generic-spacing': ['error', 'never'],
+        'flowtype/newline-after-flow-annotation': 'off',
+        'flowtype/no-dupe-keys': 'error',
+        'flowtype/no-existential-type': 'off',
+        'flowtype/no-flow-fix-me-comments': 'off',
+        'flowtype/no-mutable-array': 'off',
+        'flowtype/no-primitive-constructor-types': 'off',
+        'flowtype/no-types-missing-file-annotation': 'error',
+        'flowtype/no-unused-expressions': 'off',
+        'flowtype/no-weak-types': 'error',
+        'flowtype/object-type-delimiter': ['error', 'comma'],
+        'flowtype/require-compound-type-alias': 'off',
+        'flowtype/require-exact-type': 'off',
+        'flowtype/require-parameter-type': ['error', {
+            excludeArrowFunctions: 'expressionsOnly',
+        }],
+        'flowtype/require-return-type': ['error', 'always', {
+            excludeArrowFunctions: 'expressionsOnly',
+            annotateUndefined: 'always',
+        }],
+        'flowtype/require-types-at-top': 'off',
+        'flowtype/require-valid-file-annotation': ['error', 'always', {
+            annotationStyle: 'line',
+        }],
+        'flowtype/require-variable-type': 'off',
+        'flowtype/semi': ['error', 'always'],
+        'flowtype/sort-keys': 'off',
+        'flowtype/space-after-type-colon': ['error', 'always'],
+        'flowtype/space-before-generic-bracket': ['error', 'never'],
+        'flowtype/space-before-type-colon': ['error', 'never'],
+        'flowtype/type-id-match': 'off',
+        'flowtype/type-import-style': 'off',
+        'flowtype/union-intersection-spacing': ['error', 'always'],
+        'flowtype/use-flow-type': 'warn',
+        'flowtype/valid-syntax': 'warn',
+    },
+    settings: {
+        flowtype: {
+            onlyFilesWithFlowAnnotation: true,
+        },
+    },
+};

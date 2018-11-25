@@ -8,47 +8,17 @@
     },
     "plugins": [
         "filenames",
-        "flowtype",
         "@cookielab.io/custom-rules"
     ],
     "extends": [
         "./config/native.js",
+        "./config/flow.js",
         "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:flowtype/recommended"
+        "plugin:import/warnings"
     ],
     "rules": {
         "filenames/match-regex": ["error", "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)*$"],
 
-        "flowtype/boolean-style": ["error", "boolean"],
-        "flowtype/define-flow-type": 1,
-        "flowtype/delimiter-dangle": ["error", "only-multiline"],
-        "flowtype/generic-spacing": ["error", "never"],
-        "flowtype/no-dupe-keys": 2,
-        "flowtype/no-weak-types": 2,
-        "flowtype/object-type-delimiter": ["error", "comma"],
-        "flowtype/require-parameter-type": ["error", {
-            "excludeArrowFunctions": "expressionsOnly"
-        }],
-        "flowtype/require-return-type": ["error", "always", {
-            "excludeArrowFunctions": "expressionsOnly",
-            "annotateUndefined": "always"
-        }],
-        "flowtype/require-valid-file-annotation": ["error", "always", {
-            "annotationStyle": "line"
-        }],
-        "flowtype/semi": ["error", "always"],
-        "flowtype/space-after-type-colon": ["error", "always"],
-        "flowtype/space-before-generic-bracket": ["error", "never"],
-        "flowtype/space-before-type-colon": ["error", "never"],
-        "flowtype/union-intersection-spacing": ["error", "always"],
-        "flowtype/use-flow-type": ["warn"],
-
         "@cookielab.io/custom-rules/sort-imports": ["error"]
-    },
-    "settings": {
-        "flowtype": {
-            "onlyFilesWithFlowAnnotation": true
-        }
     }
 }
