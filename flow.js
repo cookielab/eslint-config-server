@@ -3,7 +3,7 @@ module.exports = {
         '@cookielab.io/custom-rules',
     ],
     extends: [
-        './src/index.js',
+        './babel.js',
         './src/flow.js',
     ],
     rules: {
