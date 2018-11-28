@@ -17,12 +17,14 @@
         "node": ">=8.0.0"
     },
     "peerDependencies": {
-        "@cookielab.io/eslint-plugin-custom-rules": "^0.1.0",
-        "babel-eslint": "^10.0.1",
         "eslint": "^5.0.0",
         "eslint-plugin-filenames": "^1.3.2",
-        "eslint-plugin-flowtype": "^3.2.0",
         "eslint-plugin-import": "^2.14.0"
+    },
+    "optionaldependencies": {
+        "@cookielab.io/eslint-plugin-custom-rules": "^0.1.0",
+        "babel-eslint": "^10.0.1",
+        "eslint-plugin-flowtype": "^3.2.0"
     },
     "devDependencies": {
         "@cookielab.io/eslint-plugin-custom-rules": "0.1.0",
