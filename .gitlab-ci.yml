@@ -3,8 +3,6 @@ stages:
   - test
   - publish
 
-image: cookielab/nodejs:8
-
 .yarn_template: &yarn_definition
   image: cookielab/nodejs:$NODE_VERSION
   stage: prepare
