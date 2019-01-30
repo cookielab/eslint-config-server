@@ -66,7 +66,7 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': ['error', {
-            beforeLineComment: true,
+            beforeLineComment: false,
             allowBlockStart: true,
             allowBlockEnd: true,
             allowObjectStart: true,
