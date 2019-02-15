@@ -21,7 +21,7 @@
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-import": "^2.16.0"
   },
-  "optionaldependencies": {
+  "optionalDependencies": {
     "@cookielab.io/eslint-plugin-custom-rules": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^1.1.1",
     "babel-eslint": "^10.0.1",
