@@ -2,6 +2,7 @@ module.exports = {
     extends: [
         './src/index.js',
         './src/typescript.js',
+        './src/sortImportsES6.js',
     ],
     settings: {
         'import/resolver': {
