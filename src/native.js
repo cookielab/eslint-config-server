@@ -77,7 +77,9 @@ module.exports = {
             allowArrayEnd: true,
         }],
         'lines-around-directive': 'off',
-        'lines-between-class-members': 'off',
+        'lines-between-class-members': ['error', 'always', {
+            exceptAfterSingleLine: true,
+        }],
         'max-classes-per-file': 'off',
         'max-depth': 'off',
         'max-len': 'off',
