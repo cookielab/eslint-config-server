@@ -6,7 +6,7 @@ module.exports = {
         'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
         'array-callback-return': 'error',
-        'array-element-newline': 'off',
+        'array-element-newline': ['error', 'consistent'],
         'arrow-body-style': 'off',
         'arrow-parens': ['error', 'always'],
         'arrow-spacing': 'error',
