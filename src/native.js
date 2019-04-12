@@ -24,7 +24,7 @@ module.exports = {
             objects: 'always-multiline',
             imports: 'always-multiline',
             exports: 'always-multiline',
-            functions: 'never',
+            functions: 'only-multiline', // in future switch to always-multiline
         }],
         'comma-spacing': 'error',
         'comma-style': 'error',
