@@ -76,7 +76,7 @@ module.exports = {
             allowArrayStart: true,
             allowArrayEnd: true,
         }],
-        'lines-around-directive': 'error',
+        'lines-around-directive': 'off',
         'lines-between-class-members': 'off',
         'max-classes-per-file': 'off',
         'max-depth': 'off',
@@ -259,7 +259,7 @@ module.exports = {
         'padded-blocks': ['error', {
             classes: 'never',
         }],
-        'padding-line-between-statements': 'off',
+        'padding-line-between-statements': 'off', // we need to configure it because of lines-around-directive is deprecated
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
         'prefer-destructuring': 'off',
