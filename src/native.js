@@ -55,7 +55,7 @@ module.exports = {
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
-        'implicit-arrow-linebreak': 'off',
+        'implicit-arrow-linebreak': 'error',
         'indent': ['error', 4, {
             SwitchCase: 1,
             MemberExpression: 1,
