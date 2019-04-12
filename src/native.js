@@ -46,7 +46,7 @@ module.exports = {
         'func-name-matching': 'off',
         'func-names': ['error', 'never'],
         'func-style': 'error',
-        'function-paren-newline': 'off',
+        'function-paren-newline': ['error', 'multiline'],
         'generator-star-spacing': 'error',
         'getter-return': 'error',
         'global-require': 'off',
