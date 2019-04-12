@@ -3,7 +3,7 @@
 module.exports = {
     rules: {
         'accessor-pairs': 'off',
-        'array-bracket-newline': 'off',
+        'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
         'array-callback-return': 'error',
         'array-element-newline': 'off',
