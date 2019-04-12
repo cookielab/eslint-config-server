@@ -28,7 +28,7 @@ module.exports = {
         }],
         'comma-spacing': 'error',
         'comma-style': 'error',
-        'complexity': ['error', 7],
+        'complexity': ['error', 10],
         'computed-property-spacing': 'error',
         'consistent-return': 'error',
         'consistent-this': ['error', 'that'],
