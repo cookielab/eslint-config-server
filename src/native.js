@@ -220,7 +220,7 @@ module.exports = {
         'no-shadow-restricted-names': 'error',
         'no-spaced-func': 'off',
         'no-sparse-arrays': 'error',
-        'no-sync': 'warn',
+        'no-sync': 'error',
         'no-tabs': 'off',
         'no-template-curly-in-string': 'error',
         'no-ternary': 'off',
