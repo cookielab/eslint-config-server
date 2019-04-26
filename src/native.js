@@ -173,7 +173,7 @@ module.exports = {
             ],
             allowSamePrecedence: true,
         }],
-        'no-mixed-requires': 'off',
+        'no-mixed-requires': 'error',
         'no-mixed-spaces-and-tabs': 'error',
         'no-multi-assign': 'off',
         'no-multi-spaces': 'error',
