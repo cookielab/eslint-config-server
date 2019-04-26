@@ -104,7 +104,7 @@ module.exports = {
         'newline-per-chained-call': 'error',
         'no-alert': 'error',
         'no-array-constructor': 'error',
-        'no-async-promise-executor': 'off',
+        'no-async-promise-executor': 'error',
         'no-await-in-loop': 'off',
         'no-bitwise': 'error',
         'no-buffer-constructor': 'off',
