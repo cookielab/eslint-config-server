@@ -236,7 +236,7 @@ module.exports = {
             enforceInMethodNames: false,
         }],
         'no-unexpected-multiline': 'error',
-        'no-unmodified-loop-condition': 'off',
+        'no-unmodified-loop-condition': 'error',
         'no-unneeded-ternary': 'error',
         'no-unreachable': 'error',
         'no-unsafe-finally': 'error',
