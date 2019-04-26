@@ -175,7 +175,7 @@ module.exports = {
         }],
         'no-mixed-requires': 'error',
         'no-mixed-spaces-and-tabs': 'error',
-        'no-multi-assign': 'off',
+        'no-multi-assign': 'error',
         'no-multi-spaces': 'error',
         'no-multi-str': 'error',
         'no-multiple-empty-lines': ['error', {
