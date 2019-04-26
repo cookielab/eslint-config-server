@@ -166,7 +166,13 @@ module.exports = {
         'no-loop-func': 'error',
         'no-magic-numbers': 'off',
         'no-misleading-character-class': 'off',
-        'no-mixed-operators': 'off',
+        'no-mixed-operators': ['error', {
+            groups: [
+                ['&', '|', '^', '~', '<<', '>>', '>>>'],
+                ['&&', '||'],
+            ],
+            allowSamePrecedence: true,
+        }],
         'no-mixed-requires': 'off',
         'no-mixed-spaces-and-tabs': 'error',
         'no-multi-assign': 'off',
