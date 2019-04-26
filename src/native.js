@@ -107,7 +107,7 @@ module.exports = {
         'no-async-promise-executor': 'error',
         'no-await-in-loop': 'off',
         'no-bitwise': 'error',
-        'no-buffer-constructor': 'off',
+        'no-buffer-constructor': 'error',
         'no-caller': 'error',
         'no-case-declarations': 'error',
         'no-catch-shadow': 'off',
