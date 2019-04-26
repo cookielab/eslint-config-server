@@ -229,7 +229,7 @@ module.exports = {
         'no-trailing-spaces': 'error',
         'no-undef': 'error',
         'no-undef-init': 'off',
-        'no-undefined': 'off',
+        'no-undefined': 'error',
         'no-underscore-dangle': ['error', {
             allowAfterThis: false,
             allowAfterSuper: false,
