@@ -231,7 +231,7 @@ module.exports = {
         'no-undef-init': 'off',
         'no-undefined': 'error',
         'no-underscore-dangle': ['error', {
-            allowAfterThis: false,
+            allowAfterThis: true,
             allowAfterSuper: false,
             enforceInMethodNames: false,
         }],
