@@ -143,7 +143,7 @@ module.exports = {
         'no-extend-native': 'error',
         'no-extra-bind': 'error',
         'no-extra-boolean-cast': 'error',
-        'no-extra-label': 'off',
+        'no-extra-label': 'error',
         'no-extra-parens': 'off',
         'no-extra-semi': 'error',
         'no-fallthrough': 'error',
