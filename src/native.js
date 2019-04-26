@@ -183,9 +183,9 @@ module.exports = {
             maxEOF: 1,
             maxBOF: 0,
         }],
-        'no-native-reassign': 'off',
+        'no-native-reassign': 'off', // deprecated
         'no-negated-condition': 'off',
-        'no-negated-in-lhs': 'off',
+        'no-negated-in-lhs': 'off', // deprecated
         'no-nested-ternary': 'error',
         'no-new': 'error',
         'no-new-func': 'error',
@@ -218,7 +218,7 @@ module.exports = {
         'no-sequences': 'error',
         'no-shadow': 'error',
         'no-shadow-restricted-names': 'error',
-        'no-spaced-func': 'off',
+        'no-spaced-func': 'off', // deprecated
         'no-sparse-arrays': 'error',
         'no-sync': 'error',
         'no-tabs': 'off',
