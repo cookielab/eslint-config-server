@@ -130,7 +130,9 @@ module.exports = {
         'no-dupe-keys': 'error',
         'no-duplicate-case': 'error',
         'no-duplicate-imports': 'off',
-        'no-else-return': 'error',
+        'no-else-return': ['error', {
+            allowElseIf: false,
+        }],
         'no-empty': 'error',
         'no-empty-character-class': 'error',
         'no-empty-function': 'error',
