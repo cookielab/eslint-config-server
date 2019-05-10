@@ -296,7 +296,7 @@ module.exports = {
         'semi': 'error',
         'semi-spacing': 'error',
         'semi-style': 'error',
-        'sort-imports': 'off',
+        'sort-imports': 'off', // enabled for specific languague
         'sort-keys': 'off',
         'sort-vars': 'off',
         'space-before-blocks': 'error',
