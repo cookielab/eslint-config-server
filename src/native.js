@@ -313,7 +313,7 @@ module.exports = {
         'switch-colon-spacing': 'error',
         'symbol-description': 'error',
         'template-curly-spacing': 'error',
-        'template-tag-spacing': 'off',
+        'template-tag-spacing': 'error',
         'unicode-bom': 'error',
         'use-isnan': 'error',
         'valid-jsdoc': 'off',
