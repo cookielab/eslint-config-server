@@ -253,7 +253,7 @@ module.exports = {
         'no-useless-return': 'error',
         'no-var': 'error',
         'no-void': 'error',
-        'no-warning-comments': 'off',
+        'no-warning-comments': 'warn',
         'no-whitespace-before-property': 'error',
         'no-with': 'error',
         'nonblock-statement-body-position': 'off',
