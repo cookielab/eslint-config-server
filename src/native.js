@@ -257,7 +257,12 @@ module.exports = {
         'no-whitespace-before-property': 'error',
         'no-with': 'error',
         'nonblock-statement-body-position': 'off',
-        'object-curly-newline': 'off',
+        'object-curly-newline': ['error', {
+            ObjectExpression: {multiline: true, consistent: true},
+            ObjectPattern: {multiline: true, consistent: true},
+            ImportDeclaration: {multiline: true, consistent: true},
+            ExportDeclaration: {multiline: true, consistent: true},
+        }],
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': ['error', {
             allowAllPropertiesOnSameLine: true,
