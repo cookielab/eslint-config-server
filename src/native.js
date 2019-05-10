@@ -303,6 +303,7 @@ module.exports = {
         'space-before-function-paren': ['error', {
             anonymous: 'always',
             named: 'never',
+            asyncArrow: 'always',
         }],
         'space-in-parens': 'error',
         'space-infix-ops': 'error',
