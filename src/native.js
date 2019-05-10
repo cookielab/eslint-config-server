@@ -269,6 +269,8 @@ module.exports = {
         'operator-linebreak': ['error', 'before'],
         'padded-blocks': ['error', {
             classes: 'never',
+            blocks: 'never',
+            switches: 'never',
         }],
         'padding-line-between-statements': 'off', // we need to configure it because of lines-around-directive is deprecated
         'prefer-arrow-callback': 'error',
