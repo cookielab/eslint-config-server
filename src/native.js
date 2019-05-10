@@ -319,7 +319,7 @@ module.exports = {
         'valid-jsdoc': 'off', // deprecated
         'valid-typeof': 'error',
         'vars-on-top': 'off',
-        'wrap-iife': 'error',
+        'wrap-iife': ['error', 'inside'],
         'wrap-regex': 'off',
         'yield-star-spacing': 'error',
         'yoda': 'error',
