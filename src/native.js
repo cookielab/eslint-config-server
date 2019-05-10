@@ -278,7 +278,7 @@ module.exports = {
         'prefer-numeric-literals': 'error',
         'prefer-object-spread': 'off',
         'prefer-promise-reject-errors': 'error',
-        'prefer-reflect': 'off',
+        'prefer-reflect': 'off', // deprecated
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
         'prefer-template': 'off',
