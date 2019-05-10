@@ -56,7 +56,7 @@ module.exports = {
         'id-length': 'off',
         'id-match': 'off',
         'implicit-arrow-linebreak': 'error',
-        'indent': ['error', 4, {
+        'indent': ['error', 'tab', {
             SwitchCase: 1,
         }],
         'indent-legacy': 'off', // deprecated - replaced by indent
