@@ -261,7 +261,7 @@ module.exports = {
         'object-curly-newline': 'off',
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': ['error', {
-            allowMultiplePropertiesPerLine: true,
+            allowAllPropertiesOnSameLine: true,
         }],
         'object-shorthand': ['error', 'consistent'],
         'one-var': ['error', 'never'],
