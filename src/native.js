@@ -58,7 +58,6 @@ module.exports = {
         'implicit-arrow-linebreak': 'error',
         'indent': ['error', 4, {
             SwitchCase: 1,
-            MemberExpression: 1,
         }],
         'indent-legacy': 'off',
         'init-declarations': 'error',
