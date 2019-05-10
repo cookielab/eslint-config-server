@@ -295,7 +295,7 @@ module.exports = {
         'rest-spread-spacing': 'error',
         'semi': 'error',
         'semi-spacing': 'error',
-        'semi-style': 'off',
+        'semi-style': 'error',
         'sort-imports': 'off',
         'sort-keys': 'off',
         'sort-vars': 'off',
