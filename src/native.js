@@ -287,7 +287,7 @@ module.exports = {
             avoidEscape: true,
         }],
         'radix': 'error',
-        'require-atomic-updates': 'off',
+        'require-atomic-updates': 'error',
         'require-await': 'error',
         'require-jsdoc': 'off',
         'require-unicode-regexp': 'off',
