@@ -292,7 +292,7 @@ module.exports = {
         'require-jsdoc': 'off', // deprecated
         'require-unicode-regexp': 'error',
         'require-yield': 'error',
-        'rest-spread-spacing': 'off',
+        'rest-spread-spacing': 'error',
         'semi': 'error',
         'semi-spacing': 'error',
         'semi-style': 'off',
