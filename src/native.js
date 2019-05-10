@@ -289,7 +289,7 @@ module.exports = {
         'radix': 'error',
         'require-atomic-updates': 'error',
         'require-await': 'error',
-        'require-jsdoc': 'off',
+        'require-jsdoc': 'off', // deprecated
         'require-unicode-regexp': 'off',
         'require-yield': 'error',
         'rest-spread-spacing': 'off',
