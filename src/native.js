@@ -310,7 +310,7 @@ module.exports = {
         'space-unary-ops': 'error',
         'spaced-comment': 'error',
         'strict': ['error', 'never'],
-        'switch-colon-spacing': 'off',
+        'switch-colon-spacing': 'error',
         'symbol-description': 'off',
         'template-curly-spacing': 'error',
         'template-tag-spacing': 'off',
