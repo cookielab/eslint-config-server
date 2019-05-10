@@ -281,7 +281,7 @@ module.exports = {
         'prefer-reflect': 'off', // deprecated
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
-        'prefer-template': 'off',
+        'prefer-template': 'error',
         'quote-props': ['error', 'consistent'],
         'quotes': ['error', 'single', {
             avoidEscape: true,
