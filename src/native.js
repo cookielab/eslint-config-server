@@ -316,7 +316,7 @@ module.exports = {
         'template-tag-spacing': 'error',
         'unicode-bom': 'error',
         'use-isnan': 'error',
-        'valid-jsdoc': 'off',
+        'valid-jsdoc': 'off', // deprecated
         'valid-typeof': 'error',
         'vars-on-top': 'off',
         'wrap-iife': 'error',
