@@ -321,7 +321,7 @@ module.exports = {
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'inside'],
         'wrap-regex': 'off',
-        'yield-star-spacing': 'error',
+        'yield-star-spacing': ['error', 'before'],
         'yoda': 'error',
     },
 };
