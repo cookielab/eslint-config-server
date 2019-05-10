@@ -311,7 +311,7 @@ module.exports = {
         'spaced-comment': 'error',
         'strict': ['error', 'never'],
         'switch-colon-spacing': 'error',
-        'symbol-description': 'off',
+        'symbol-description': 'error',
         'template-curly-spacing': 'error',
         'template-tag-spacing': 'off',
         'unicode-bom': 'error',
