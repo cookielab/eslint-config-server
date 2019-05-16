@@ -60,6 +60,7 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-extra-parens': 'off',
         '@typescript-eslint/no-extraneous-class': 'error',
+        '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
