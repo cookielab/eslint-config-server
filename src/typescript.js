@@ -49,6 +49,7 @@ module.exports = {
             MemberExpression: 1,
         }],
         '@typescript-eslint/interface-name-prefix': 'off',
+        '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
