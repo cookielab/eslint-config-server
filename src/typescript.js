@@ -37,11 +37,11 @@ module.exports = {
             },
         }],
         '@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
-        '@typescript-eslint/class-name-casing': ['error'],
+        '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
-        '@typescript-eslint/explicit-member-accessibility': ['error'],
+        '@typescript-eslint/explicit-member-accessibility': 'error',
         'func-call-spacing': 'off', // Disable base rule to avoid errors
-        '@typescript-eslint/func-call-spacing': ['error'],
+        '@typescript-eslint/func-call-spacing': 'error',
         '@typescript-eslint/generic-type-naming': 'off',
         'indent': 'off', // Disable base rule to avoid errors
         '@typescript-eslint/indent': ['error', 'tab', {
