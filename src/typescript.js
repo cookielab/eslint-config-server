@@ -36,6 +36,7 @@ module.exports = {
                 },
             },
         }],
+        '@typescript-eslint/camelcase': 'off', // Used in general eslint rules
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
