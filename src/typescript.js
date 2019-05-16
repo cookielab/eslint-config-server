@@ -67,6 +67,7 @@ module.exports = {
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/no-object-literal-type-assertion': 'off',
+        '@typescript-eslint/no-parameter-properties': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
