@@ -43,6 +43,11 @@ module.exports = {
         'func-call-spacing': 'off', // Disable base rule to avoid errors
         '@typescript-eslint/func-call-spacing': ['error'],
         '@typescript-eslint/generic-type-naming': 'off',
+        'indent': 'off', // Disable base rule to avoid errors
+        '@typescript-eslint/indent': ['error', 'tab', {
+            SwitchCase: 1,
+            MemberExpression: 1,
+        }],
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
