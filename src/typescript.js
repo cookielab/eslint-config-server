@@ -50,6 +50,7 @@ module.exports = {
         }],
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/member-delimiter-style': 'error',
+        '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
