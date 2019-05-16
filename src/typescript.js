@@ -38,6 +38,7 @@ module.exports = {
         }],
         '@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
         '@typescript-eslint/class-name-casing': ['error'],
+        '@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
