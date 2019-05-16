@@ -48,6 +48,7 @@ module.exports = {
             SwitchCase: 1,
             MemberExpression: 1,
         }],
+        '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
