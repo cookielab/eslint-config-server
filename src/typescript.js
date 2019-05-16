@@ -62,6 +62,7 @@ module.exports = {
         '@typescript-eslint/no-extraneous-class': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-inferrable-types': 'off',
+        '@typescript-eslint/no-magic-numbers': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
