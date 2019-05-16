@@ -51,6 +51,7 @@ module.exports = {
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-naming': 'off',
+        '@typescript-eslint/member-ordering': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
