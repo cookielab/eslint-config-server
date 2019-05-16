@@ -40,6 +40,8 @@ module.exports = {
         '@typescript-eslint/class-name-casing': ['error'],
         '@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
         '@typescript-eslint/explicit-member-accessibility': ['error'],
+        'func-call-spacing': 'off', // Disable base rule to avoid errors
+        '@typescript-eslint/func-call-spacing': ['error'],
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
