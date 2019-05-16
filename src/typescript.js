@@ -13,6 +13,29 @@ module.exports = {
         '@typescript-eslint/array-type': ['error', 'array-simple'],
         '@typescript-eslint/await-promise': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/ban-types': ['error', {
+            'types': {
+                'String': {
+                    'message': 'Use string instead',
+                    'fixWith': 'string',
+                },
+                'Object': {
+                    'message': 'Use object instead',
+                    'fixWith': 'object',
+                },
+                'Number': {
+                    'message': 'Use number instead',
+                    'fixWith': 'number',
+                },
+                'Boolean': {
+                    'message': 'Use boolean instead',
+                    'fixWith': 'boolean',
+                },
+                'Array': {
+                    'message': 'Use Array<any> instead',
+                },
+            },
+        }],
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
