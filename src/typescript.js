@@ -52,6 +52,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/member-ordering': 'error',
+        '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
