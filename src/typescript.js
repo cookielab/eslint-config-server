@@ -65,6 +65,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'off',
         '@typescript-eslint/no-misused-new': 'error',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
