@@ -58,6 +58,7 @@ module.exports = {
             'allowSingleExtends': true,
         }],
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-extra-parens': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
