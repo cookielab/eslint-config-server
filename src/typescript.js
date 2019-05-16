@@ -53,6 +53,7 @@ module.exports = {
         '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/member-ordering': 'error',
         '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+        '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
