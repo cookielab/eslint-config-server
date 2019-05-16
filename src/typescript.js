@@ -57,6 +57,7 @@ module.exports = {
         '@typescript-eslint/no-empty-interface': ['error', {
             'allowSingleExtends': true,
         }],
+        '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
