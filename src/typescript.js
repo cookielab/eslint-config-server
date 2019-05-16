@@ -42,6 +42,7 @@ module.exports = {
         '@typescript-eslint/explicit-member-accessibility': ['error'],
         'func-call-spacing': 'off', // Disable base rule to avoid errors
         '@typescript-eslint/func-call-spacing': ['error'],
+        '@typescript-eslint/generic-type-naming': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
     },
 };
