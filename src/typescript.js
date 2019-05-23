@@ -82,5 +82,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/no-use-before-define': 'error', // need to be tested with eslint no-use-before-define
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/no-var-requires': 'error',
     },
 };
