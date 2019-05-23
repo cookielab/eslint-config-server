@@ -79,5 +79,6 @@ module.exports = {
             'allowMappedTypes': 'always',
         }],
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     },
 };
