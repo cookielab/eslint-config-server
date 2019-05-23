@@ -93,5 +93,7 @@ module.exports = {
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/require-array-sort-compare': 'off',
         '@typescript-eslint/restrict-plus-operands': 'error',
+        'semi': 'off', // Disable base rule to avoid errors
+        '@typescript-eslint/semi': 'error',
     },
 };
