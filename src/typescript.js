@@ -91,5 +91,6 @@ module.exports = {
         '@typescript-eslint/prefer-regexp-exec': 'error',
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         '@typescript-eslint/promise-function-async': 'off',
+        '@typescript-eslint/require-array-sort-compare': 'off',
     },
 };
