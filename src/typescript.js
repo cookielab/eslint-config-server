@@ -95,5 +95,6 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'error',
         'semi': 'off', // Disable base rule to avoid errors
         '@typescript-eslint/semi': 'error',
+        '@typescript-eslint/type-annotation-spacing': 'error',
     },
 };
