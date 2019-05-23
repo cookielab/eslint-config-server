@@ -96,5 +96,6 @@ module.exports = {
         'semi': 'off', // Disable base rule to avoid errors
         '@typescript-eslint/semi': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
+        '@typescript-eslint/unbound-method': 'error',
     },
 };
