@@ -89,5 +89,6 @@ module.exports = {
         '@typescript-eslint/prefer-interface': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'off',
         '@typescript-eslint/prefer-regexp-exec': 'error',
+        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     },
 };
