@@ -72,5 +72,11 @@ module.exports = {
         '@typescript-eslint/no-require-imports': 'error',
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-triple-slash-reference': 'error',
+        '@typescript-eslint/no-type-alias': ['error', {
+            'allowAliases': 'in-unions-and-intersections',
+            'allowCallbacks': 'always',
+            'allowLiterals': 'always',
+            'allowMappedTypes': 'always',
+        }],
     },
 };
