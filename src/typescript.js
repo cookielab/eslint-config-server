@@ -87,5 +87,6 @@ module.exports = {
         '@typescript-eslint/prefer-function-type': 'off',
         '@typescript-eslint/prefer-includes': 'error',
         '@typescript-eslint/prefer-interface': 'error',
+        '@typescript-eslint/prefer-namespace-keyword': 'off',
     },
 };
