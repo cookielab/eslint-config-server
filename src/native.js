@@ -243,7 +243,7 @@ module.exports = {
         'no-unused-expressions': 'error',
         'no-unused-labels': 'error',
         'no-unused-vars': 'error',
-        'no-use-before-define': 'off', // needs to be tested how it behaves in recursive call
+        'no-use-before-define': 'error', // needs to be tested how it behaves in recursive call
         'no-useless-call': 'error',
         'no-useless-computed-key': 'error',
         'no-useless-concat': 'error',
