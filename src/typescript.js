@@ -71,5 +71,6 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-require-imports': 'error',
         '@typescript-eslint/no-this-alias': 'error',
+        '@typescript-eslint/no-triple-slash-reference': 'error',
     },
 };
