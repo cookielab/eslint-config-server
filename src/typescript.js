@@ -78,5 +78,6 @@ module.exports = {
             'allowLiterals': 'always',
             'allowMappedTypes': 'always',
         }],
+        '@typescript-eslint/no-unnecessary-qualifier': 'error',
     },
 };
