@@ -14,25 +14,25 @@ module.exports = {
         '@typescript-eslint/await-promise': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/ban-types': ['error', {
-            'types': {
-                'String': {
-                    'message': 'Use string instead',
-                    'fixWith': 'string',
+            types: {
+                String: {
+                    message: 'Use string instead',
+                    fixWith: 'string',
                 },
-                'Object': {
-                    'message': 'Use object instead',
-                    'fixWith': 'object',
+                Object: {
+                    message: 'Use object instead',
+                    fixWith: 'object',
                 },
-                'Number': {
-                    'message': 'Use number instead',
-                    'fixWith': 'number',
+                Number: {
+                    message: 'Use number instead',
+                    fixWith: 'number',
                 },
-                'Boolean': {
-                    'message': 'Use boolean instead',
-                    'fixWith': 'boolean',
+                Boolean: {
+                    message: 'Use boolean instead',
+                    fixWith: 'boolean',
                 },
-                'Array': {
-                    'message': 'Use Array<any> instead',
+                Array: {
+                    message: 'Use Array<any> instead',
                 },
             },
         }],
@@ -55,7 +55,7 @@ module.exports = {
         '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': ['error', {
-            'allowSingleExtends': true,
+            allowSingleExtends: true,
         }],
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-extra-parens': 'off',
