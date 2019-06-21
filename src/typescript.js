@@ -31,9 +31,13 @@ module.exports = {
 					message: 'Use boolean instead',
 					fixWith: 'boolean',
 				},
-				Array: {
-					message: 'Use Array<any> instead',
-				},
+
+				/*
+				 * The rule for Array is not fully supported yet https://github.com/typescript-eslint/typescript-eslint/commit/c14ade74a61007fa48af9ae4a5535b426080e64d
+				 * Array: {
+				 * 	message: 'Use Array<any> instead',
+				 * },
+				 */
 			},
 		}],
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
