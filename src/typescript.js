@@ -7,6 +7,16 @@ module.exports = {
 	plugins: [
 		'@typescript-eslint',
 	],
+	overrides: [
+		{
+			files: [
+				'*.test.ts',
+			],
+			rules: {
+				'@typescript-eslint/unbound-method': 'off',
+			},
+		},
+	],
 	rules: {
 		'no-duplicate-imports': 'error',
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
