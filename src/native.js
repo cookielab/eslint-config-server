@@ -227,8 +227,8 @@ module.exports = {
 		'no-throw-literal': 'error',
 		'no-trailing-spaces': 'error',
 		'no-undef': 'error',
-		'no-undef-init': 'off',
-		'no-undefined': 'error',
+		'no-undef-init': 'error',
+		'no-undefined': 'off',
 		'no-underscore-dangle': ['error', {
 			allowAfterThis: true,
 			allowAfterSuper: false,
