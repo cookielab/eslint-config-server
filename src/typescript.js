@@ -69,6 +69,8 @@ module.exports = {
 		'@typescript-eslint/member-ordering': 'error',
 		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
 		'@typescript-eslint/no-array-constructor': 'error',
+		'no-empty-function': 'off',
+		'@typescript-eslint/no-empty-function': 'error',
 		'@typescript-eslint/no-empty-interface': ['error', {
 			allowSingleExtends: true,
 		}],
