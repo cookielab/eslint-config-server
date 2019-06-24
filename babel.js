@@ -1,6 +1,6 @@
 module.exports = {
-    parser: 'babel-eslint',
-    extends: [
-        './src/index.js',
-    ],
+	parser: 'babel-eslint',
+	extends: [
+		'./src/index.js',
+	],
 };
