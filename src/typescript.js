@@ -52,6 +52,7 @@ module.exports = {
 		}],
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
 		'@typescript-eslint/class-name-casing': 'error',
+		'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 		'@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
 		'@typescript-eslint/explicit-member-accessibility': 'error',
 		'func-call-spacing': 'off', // Disable base rule to avoid errors
@@ -100,7 +101,7 @@ module.exports = {
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'off',
 		'@typescript-eslint/prefer-includes': 'error',
-		'@typescript-eslint/prefer-interface': 'error',
+		'@typescript-eslint/prefer-interface': 'off', // deprecated by @typescript-eslint/consistent-type-definitions
 		'@typescript-eslint/prefer-namespace-keyword': 'off',
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
