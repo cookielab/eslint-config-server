@@ -30,7 +30,7 @@ module.exports = {
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'off',
 		'import/no-duplicates': 'error',
-		'import/no-dynamic-require': 'off',
+		'import/no-dynamic-require': 'error',
 		'import/no-extraneous-dependencies': 'off',
 		'import/no-internal-modules': 'off',
 		'import/no-mutable-exports': 'off',
