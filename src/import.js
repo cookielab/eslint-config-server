@@ -29,7 +29,7 @@ module.exports = {
 		'import/no-cycle': 'off',
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'off',
-		'import/no-duplicates': 'warn',
+		'import/no-duplicates': 'error',
 		'import/no-dynamic-require': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'import/no-internal-modules': 'off',
