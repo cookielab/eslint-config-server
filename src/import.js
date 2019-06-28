@@ -31,7 +31,11 @@ module.exports = {
 		'import/no-deprecated': 'off',
 		'import/no-duplicates': 'error',
 		'import/no-dynamic-require': 'error',
-		'import/no-extraneous-dependencies': 'off',
+		'import/no-extraneous-dependencies': ['error', {
+			devDependencies: ['**/tests/**/*'], // do not report dev dependencies in tests
+			optionalDependencies: true, // do not report optional dependencies
+			peerDependencies: true, // do not report peer dependencies
+		}],
 		'import/no-internal-modules': 'off',
 		'import/no-mutable-exports': 'off',
 		'import/no-named-as-default': 'warn',
