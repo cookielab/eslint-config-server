@@ -47,7 +47,7 @@ module.exports = {
 		'import/no-relative-parent-imports': 'off',
 		'import/no-restricted-paths': 'off',
 		'import/no-self-import': 'error',
-		'import/no-unassigned-import': 'off',
+		'import/no-unassigned-import': 'error',
 		'import/no-unresolved': 'error',
 		'import/no-useless-path-segments': 'off',
 		'import/no-webpack-loader-syntax': 'off',
