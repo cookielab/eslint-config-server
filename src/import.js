@@ -49,7 +49,9 @@ module.exports = {
 		'import/no-self-import': 'error',
 		'import/no-unassigned-import': 'error',
 		'import/no-unresolved': 'error',
-		'import/no-useless-path-segments': 'off',
+		'import/no-useless-path-segments': ['error', {
+			noUselessIndex: true,
+		}],
 		'import/no-webpack-loader-syntax': 'off',
 		'import/order': 'off',
 		'import/prefer-default-export': 'off',
