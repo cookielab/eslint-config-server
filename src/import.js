@@ -15,7 +15,7 @@ module.exports = {
 		'import/namespace': 'error',
 		'import/newline-after-import': 'error',
 		'import/no-absolute-path': 'error',
-		'import/no-amd': 'off',
+		'import/no-amd': 'error',
 		'import/no-anonymous-default-export': 'off',
 		'import/no-commonjs': 'off',
 		'import/no-cycle': 'off',
