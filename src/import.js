@@ -14,7 +14,7 @@ module.exports = {
 		'import/named': 'error',
 		'import/namespace': 'error',
 		'import/newline-after-import': 'error',
-		'import/no-absolute-path': 'off',
+		'import/no-absolute-path': 'error',
 		'import/no-amd': 'off',
 		'import/no-anonymous-default-export': 'off',
 		'import/no-commonjs': 'off',
