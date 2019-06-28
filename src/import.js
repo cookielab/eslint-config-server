@@ -25,7 +25,7 @@ module.exports = {
 			allowLiteral: false,
 			allowObject: true,
 		}],
-		'import/no-commonjs': 'off',
+		'import/no-commonjs': 'error',
 		'import/no-cycle': 'off',
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'off',
