@@ -37,7 +37,7 @@ module.exports = {
 			peerDependencies: true, // do not report peer dependencies
 		}],
 		'import/no-internal-modules': 'off',
-		'import/no-mutable-exports': 'off',
+		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'warn',
 		'import/no-named-as-default-member': 'warn',
 		'import/no-named-default': 'off',
