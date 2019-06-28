@@ -39,7 +39,7 @@ module.exports = {
 		'import/no-internal-modules': 'off',
 		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'error',
-		'import/no-named-as-default-member': 'warn',
+		'import/no-named-as-default-member': 'error',
 		'import/no-named-default': 'off',
 		'import/no-named-export': 'off',
 		'import/no-namespace': 'off',
