@@ -20,7 +20,9 @@ module.exports = {
 	rules: {
 		'no-duplicate-imports': 'error',
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
-		'@typescript-eslint/array-type': ['error', 'array-simple'],
+		'@typescript-eslint/array-type': ['error', {
+			default: 'array-simple',
+		}],
 		'@typescript-eslint/await-promise': 'off',
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		'@typescript-eslint/ban-types': ['error', {
@@ -52,6 +54,10 @@ module.exports = {
 		}],
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
 		'@typescript-eslint/class-name-casing': 'error',
+		'@typescript-eslint/consistent-type-assertions': ['error', {
+			assertionStyle: 'as',
+			objectLiteralTypeAssertions: 'never',
+		}],
 		'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 		'@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
 		'@typescript-eslint/explicit-member-accessibility': 'error',
@@ -67,7 +73,6 @@ module.exports = {
 		'@typescript-eslint/member-delimiter-style': 'error',
 		'@typescript-eslint/member-naming': 'off',
 		'@typescript-eslint/member-ordering': 'error',
-		'@typescript-eslint/no-angle-bracket-type-assertion': 'error',
 		'@typescript-eslint/no-array-constructor': 'error',
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'error',
@@ -84,12 +89,15 @@ module.exports = {
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-namespace': 'error',
 		'@typescript-eslint/no-non-null-assertion': 'error',
-		'@typescript-eslint/no-object-literal-type-assertion': 'off',
 		'@typescript-eslint/no-parameter-properties': 'off',
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
-		'@typescript-eslint/no-triple-slash-reference': 'error',
+		'@typescript-eslint/triple-slash-reference': ['error', {
+			path: 'never',
+			types: 'never',
+			lib: 'never',
+		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
 			allowCallbacks: 'always',
@@ -97,6 +105,7 @@ module.exports = {
 			allowMappedTypes: 'always',
 		}],
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
+		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-use-before-define': 'error', // need to be tested with eslint no-use-before-define
 		'@typescript-eslint/no-useless-constructor': 'error',
@@ -104,7 +113,6 @@ module.exports = {
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'off',
 		'@typescript-eslint/prefer-includes': 'error',
-		'@typescript-eslint/prefer-interface': 'off', // deprecated by @typescript-eslint/consistent-type-definitions
 		'@typescript-eslint/prefer-namespace-keyword': 'off',
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
@@ -113,7 +121,19 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'semi': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/semi': 'error',
+		'@typescript-eslint/strict-boolean-expressions': ['error', {
+			ignoreRhs: false,
+		}],
 		'@typescript-eslint/type-annotation-spacing': 'error',
+		'@typescript-eslint/typedef': ['error', {
+			arrayDestructuring: false,
+			arrowParameter: true,
+			memberVariableDeclaration: true,
+			objectDestructuring: false,
+			parameter: true,
+			propertyDeclaration: true,
+			variableDeclaration: false,
+		}],
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 	},
