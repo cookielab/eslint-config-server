@@ -23,7 +23,6 @@ module.exports = {
 		'@typescript-eslint/array-type': ['error', {
 			default: 'array-simple',
 		}],
-		'@typescript-eslint/await-promise': 'off',
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		'@typescript-eslint/ban-types': ['error', {
 			types: {
