@@ -313,7 +313,7 @@ module.exports = {
 		'semi': 'error',
 		'semi-spacing': 'error',
 		'semi-style': 'error',
-		'sort-imports': 'off', // enabled for specific languague
+		'sort-imports': 'off', // enabled for specific languages
 		'sort-keys': 'off',
 		'sort-vars': 'off',
 		'space-before-blocks': 'error',
