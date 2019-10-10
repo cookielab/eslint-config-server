@@ -92,11 +92,6 @@ module.exports = {
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
-		'@typescript-eslint/triple-slash-reference': ['error', {
-			path: 'never',
-			types: 'never',
-			lib: 'never',
-		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
 			allowCallbacks: 'always',
@@ -122,6 +117,11 @@ module.exports = {
 		'@typescript-eslint/semi': 'error',
 		'@typescript-eslint/strict-boolean-expressions': ['error', {
 			ignoreRhs: false,
+		}],
+		'@typescript-eslint/triple-slash-reference': ['error', {
+			path: 'never',
+			types: 'never',
+			lib: 'never',
 		}],
 		'@typescript-eslint/type-annotation-spacing': 'error',
 		'@typescript-eslint/typedef': ['error', {
