@@ -6,10 +6,13 @@ describe('Rules Configurations', () => {
 		const localRules = Object.keys(localConfig.rules);
 		const pluginRules = Object.keys(plugin.rules).map((ruleName) => `@typescript-eslint/${ruleName}`);
 		const overridenRuleNames = [
-			'no-duplicate-imports',
+			'brace-style',
 			'func-call-spacing',
 			'indent',
+			'no-duplicate-imports',
 			'no-empty-function',
+			'quotes',
+			'require-await',
 			'semi',
 		];
 

@@ -23,6 +23,7 @@ module.exports = {
 		'@typescript-eslint/array-type': ['error', {
 			default: 'array-simple',
 		}],
+		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		'@typescript-eslint/ban-types': ['error', {
 			types: {
@@ -51,6 +52,8 @@ module.exports = {
 				 */
 			},
 		}],
+		'brace-style': 'off',
+		'@typescript-eslint/brace-style': ['error', '1tbs'],
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
 		'@typescript-eslint/class-name-casing': 'error',
 		'@typescript-eslint/consistent-type-assertions': ['error', {
@@ -86,12 +89,19 @@ module.exports = {
 		'@typescript-eslint/no-inferrable-types': 'off',
 		'@typescript-eslint/no-magic-numbers': 'off',
 		'@typescript-eslint/no-misused-new': 'error',
+		'@typescript-eslint/no-misused-promises': ['error', {
+			checksConditionals: true,
+			checksVoidReturn: true,
+		}],
 		'@typescript-eslint/no-namespace': 'error',
 		'@typescript-eslint/no-non-null-assertion': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
+		'@typescript-eslint/no-unnecessary-condition': ['error', {
+			ignoreRhs: true,
+		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
 			allowCallbacks: 'always',
@@ -108,10 +118,19 @@ module.exports = {
 		'@typescript-eslint/prefer-function-type': 'off',
 		'@typescript-eslint/prefer-includes': 'error',
 		'@typescript-eslint/prefer-namespace-keyword': 'off',
+		'@typescript-eslint/prefer-readonly': ['error', {
+			onlyInlineLambdas: false,
+		}],
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': 'off',
+		'quotes': 'off',
+		'@typescript-eslint/quotes': ['error', 'single', {
+			avoidEscape: true,
+		}],
 		'@typescript-eslint/require-array-sort-compare': 'off',
+		'require-await': 'off',
+		'@typescript-eslint/require-await': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
 		'semi': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/semi': 'error',
