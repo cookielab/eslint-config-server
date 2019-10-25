@@ -328,7 +328,9 @@ module.exports = {
 		'template-curly-spacing': 'error',
 		'template-tag-spacing': 'error',
 		'unicode-bom': 'error',
-		'use-isnan': 'error',
+		'use-isnan': ['error', {
+			enforceForSwitchCase: true,
+		}],
 		'valid-typeof': 'error',
 		'vars-on-top': 'off',
 		'wrap-iife': ['error', 'inside'],
