@@ -13,6 +13,7 @@ describe('Rules Configurations', () => {
 		const pluginRules = Object.keys(plugin.rules).map((ruleName) => `flowtype/${ruleName}`);
 		const overridenRuleNames = [
 			'no-duplicate-imports',
+			'import/no-cycle',
 		];
 
 		it('has configuration for all supported rules', () => {

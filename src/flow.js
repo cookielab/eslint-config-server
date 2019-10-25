@@ -4,6 +4,7 @@ module.exports = {
 	],
 	rules: {
 		'no-duplicate-imports': 'off', // to support separate imports of types
+		'import/no-cycle': 'off', // to support importing types
 		'flowtype/array-style-complex-type': 'off',
 		'flowtype/array-style-simple-type': 'off',
 		'flowtype/arrow-parens': ['error', 'always'],

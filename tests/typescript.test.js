@@ -19,6 +19,7 @@ describe('Rules Configurations', () => {
 			'quotes',
 			'require-await',
 			'semi',
+			'import/no-cycle',
 		];
 
 		it('has configuration for all supported rules', () => {

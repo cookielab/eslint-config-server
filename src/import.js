@@ -37,7 +37,7 @@ module.exports = {
 			allowObject: true,
 		}],
 		'import/no-commonjs': 'error',
-		'import/no-cycle': 'off',
+		'import/no-cycle': 'error',
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'error',
 		'import/no-duplicates': 'error',

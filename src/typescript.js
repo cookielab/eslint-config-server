@@ -18,6 +18,7 @@ module.exports = {
 		},
 	],
 	rules: {
+		'import/no-cycle': 'off', // to support importing types/interfaces
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': ['error', {
 			default: 'array-simple',
