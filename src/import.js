@@ -2,6 +2,16 @@ module.exports = {
 	plugins: [
 		'import',
 	],
+	overrides: [
+		{
+			files: [
+				'*.test.js',
+			],
+			rules: {
+				'import/no-internal-modules': 'off',
+			},
+		},
+	],
 	rules: {
 		'import/default': 'error',
 		'import/dynamic-import-chunkname': 'off',
@@ -37,7 +47,7 @@ module.exports = {
 			optionalDependencies: true, // do not report optional dependencies
 			peerDependencies: true, // do not report peer dependencies
 		}],
-		'import/no-internal-modules': 'off',
+		'import/no-internal-modules': 'error',
 		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'error',
 		'import/no-named-as-default-member': 'error',
