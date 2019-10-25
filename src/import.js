@@ -8,9 +8,9 @@ module.exports = {
 		'import/export': 'error',
 		'import/exports-last': 'off',
 		'import/extensions': ['error', 'never', {json: 'ignorePackages'}],
-		'import/first': 'off',
+		'import/first': 'error',
 		'import/group-exports': 'off',
-		'import/imports-first': 'off',
+		'import/imports-first': 'off', // deprecated, alias for "first"
 		'import/max-dependencies': 'off',
 		'import/named': 'error',
 		'import/namespace': 'error',
