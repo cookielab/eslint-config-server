@@ -10,6 +10,7 @@ module.exports = {
 		'import/extensions': ['error', 'never', {json: 'ignorePackages'}],
 		'import/first': 'off',
 		'import/group-exports': 'off',
+		'import/imports-first': 'off',
 		'import/max-dependencies': 'off',
 		'import/named': 'error',
 		'import/namespace': 'error',
@@ -49,6 +50,7 @@ module.exports = {
 		'import/no-self-import': 'error',
 		'import/no-unassigned-import': 'error',
 		'import/no-unresolved': 'error',
+		'import/no-unused-modules': 'error',
 		'import/no-useless-path-segments': ['error', {
 			noUselessIndex: true,
 		}],

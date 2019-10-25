@@ -35,6 +35,7 @@ module.exports = {
 		'constructor-super': 'error',
 		'curly': 'error',
 		'default-case': 'error',
+		'default-param-last': 'error',
 		'dot-location': ['error', 'property'],
 		'dot-notation': 'error',
 		'eol-last': 'error',
@@ -46,6 +47,7 @@ module.exports = {
 		'func-name-matching': 'off',
 		'func-names': ['error', 'never'],
 		'func-style': 'error',
+		'function-call-argument-newline': ['error', 'consistent'],
 		'function-paren-newline': ['error', 'multiline'],
 		'generator-star-spacing': 'error',
 		'getter-return': 'error',
@@ -59,7 +61,6 @@ module.exports = {
 		'indent': ['error', 'tab', {
 			SwitchCase: 1,
 		}],
-		'indent-legacy': 'off', // deprecated - replaced by indent
 		'init-declarations': 'error',
 		'jsx-quotes': 'off',
 		'key-spacing': 'error',
@@ -75,7 +76,6 @@ module.exports = {
 			allowArrayStart: true,
 			allowArrayEnd: true,
 		}],
-		'lines-around-directive': 'off', // deprecated - replaced by padding-line-between-statements
 		'lines-between-class-members': ['error', 'always', {
 			exceptAfterSingleLine: true,
 		}],
@@ -98,8 +98,6 @@ module.exports = {
 			capIsNew: false,
 		}],
 		'new-parens': 'error',
-		'newline-after-var': 'off', // deprecated - replaced by padding-line-between-statements
-		'newline-before-return': 'off', // deprecated - replaced by padding-line-between-statements
 		'newline-per-chained-call': 'error',
 		'no-alert': 'error',
 		'no-array-constructor': 'error',
@@ -109,7 +107,6 @@ module.exports = {
 		'no-buffer-constructor': 'error',
 		'no-caller': 'error',
 		'no-case-declarations': 'error',
-		'no-catch-shadow': 'off', // deprecated - replaced by no-shadow
 		'no-class-assign': 'error',
 		'no-compare-neg-zero': 'error',
 		'no-cond-assign': 'error',
@@ -152,6 +149,7 @@ module.exports = {
 		'no-implicit-coercion': 'error',
 		'no-implicit-globals': 'off',
 		'no-implied-eval': 'error',
+		'no-import-assign': 'error',
 		'no-inline-comments': 'off',
 		'no-inner-declarations': 'error',
 		'no-invalid-regexp': 'error',
@@ -182,9 +180,7 @@ module.exports = {
 			maxEOF: 1,
 			maxBOF: 0,
 		}],
-		'no-native-reassign': 'off', // deprecated - replaced by no-global-assign
 		'no-negated-condition': 'off',
-		'no-negated-in-lhs': 'off', // deprecated - replaced by no-unsafe-negation
 		'no-nested-ternary': 'error',
 		'no-new': 'error',
 		'no-new-func': 'error',
@@ -217,7 +213,6 @@ module.exports = {
 		'no-sequences': 'error',
 		'no-shadow': 'error',
 		'no-shadow-restricted-names': 'error',
-		'no-spaced-func': 'off', // deprecated - replaced by func-call-spacing
 		'no-sparse-arrays': 'error',
 		'no-sync': 'error',
 		'no-tabs': 'off',
@@ -245,6 +240,7 @@ module.exports = {
 		'no-unused-vars': 'error',
 		'no-use-before-define': 'error', // needs to be tested how it behaves in recursive call
 		'no-useless-call': 'error',
+		'no-useless-catch': 'error',
 		'no-useless-computed-key': 'error',
 		'no-useless-concat': 'error',
 		'no-useless-constructor': 'error',
@@ -292,10 +288,11 @@ module.exports = {
 		'prefer-arrow-callback': 'error',
 		'prefer-const': 'error',
 		'prefer-destructuring': 'off',
+		'prefer-named-capture-group': 'off',
 		'prefer-numeric-literals': 'error',
 		'prefer-object-spread': 'off',
 		'prefer-promise-reject-errors': 'error',
-		'prefer-reflect': 'off', // deprecated - no replacement
+		'prefer-regex-literals': 'error',
 		'prefer-rest-params': 'error',
 		'prefer-spread': 'error',
 		'prefer-template': 'error',
@@ -306,7 +303,6 @@ module.exports = {
 		'radix': 'error',
 		'require-atomic-updates': 'error',
 		'require-await': 'error',
-		'require-jsdoc': 'off', // deprecated - no replacement
 		'require-unicode-regexp': 'error',
 		'require-yield': 'error',
 		'rest-spread-spacing': 'error',
@@ -333,7 +329,6 @@ module.exports = {
 		'template-tag-spacing': 'error',
 		'unicode-bom': 'error',
 		'use-isnan': 'error',
-		'valid-jsdoc': 'off', // deprecated - no replacement
 		'valid-typeof': 'error',
 		'vars-on-top': 'off',
 		'wrap-iife': ['error', 'inside'],

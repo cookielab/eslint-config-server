@@ -51,6 +51,28 @@ stages:
   variables:
     NODE_VERSION: 10
 
+.test_template: &test_definition
+  image: cookielab/nodejs:$NODE_VERSION
+  stage: test
+  tags:
+    - docker
+  script:
+    - bin/jest
+
+'test 8/10':
+  <<: *test_definition
+  dependencies:
+    - 'yarn 8/10'
+  variables:
+    NODE_VERSION: 8
+
+'test 10/10':
+  <<: *test_definition
+  dependencies:
+    - 'yarn 10/10'
+  variables:
+    NODE_VERSION: 10
+
 publish:
   image: cookielab/nodejs:10
   stage: publish

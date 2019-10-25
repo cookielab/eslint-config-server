@@ -5,6 +5,7 @@ module.exports = {
 	rules: {
 		'flowtype/array-style-complex-type': 'off',
 		'flowtype/array-style-simple-type': 'off',
+		'flowtype/arrow-parens': ['error', 'always'],
 		'flowtype/boolean-style': ['error', 'boolean'],
 		'flowtype/define-flow-type': 'warn',
 		'flowtype/delimiter-dangle': ['error', 'only-multiline'],
@@ -13,6 +14,7 @@ module.exports = {
 		'flowtype/no-dupe-keys': 'error',
 		'flowtype/no-existential-type': 'off',
 		'flowtype/no-flow-fix-me-comments': 'off',
+		'flowtype/no-mixed': 'off',
 		'flowtype/no-mutable-array': 'off',
 		'flowtype/no-primitive-constructor-types': 'off',
 		'flowtype/no-types-missing-file-annotation': 'error',
@@ -21,9 +23,12 @@ module.exports = {
 		'flowtype/object-type-delimiter': ['error', 'comma'],
 		'flowtype/require-compound-type-alias': 'off',
 		'flowtype/require-exact-type': 'off',
+		'flowtype/require-indexer-name': 'off',
+		'flowtype/require-inexact-type': 'off',
 		'flowtype/require-parameter-type': ['error', {
 			excludeArrowFunctions: 'expressionsOnly',
 		}],
+		'flowtype/require-readonly-react-props': 'error',
 		'flowtype/require-return-type': ['error', 'always', {
 			excludeArrowFunctions: 'expressionsOnly',
 			annotateUndefined: 'always',
@@ -38,6 +43,7 @@ module.exports = {
 		'flowtype/space-after-type-colon': ['error', 'always'],
 		'flowtype/space-before-generic-bracket': ['error', 'never'],
 		'flowtype/space-before-type-colon': ['error', 'never'],
+		'flowtype/spread-exact-type': 'error',
 		'flowtype/type-id-match': 'off',
 		'flowtype/type-import-style': 'off',
 		'flowtype/union-intersection-spacing': ['error', 'always'],
