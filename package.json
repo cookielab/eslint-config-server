@@ -23,8 +23,8 @@
   },
   "optionalDependencies": {
     "@cookielab.io/eslint-plugin-custom-rules": "^0.3.0",
-    "@typescript-eslint/eslint-plugin": "^2.3.3",
-    "@typescript-eslint/parser": "^2.3.3",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
     "babel-eslint": "^10.0.3",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-flowtype": "^4.3.0",
@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@cookielab.io/eslint-plugin-custom-rules": "0.3.0",
-    "@typescript-eslint/eslint-plugin": "2.3.3",
-    "@typescript-eslint/parser": "2.3.3",
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/parser": "2.5.0",
     "ajv": "6.10.2",
     "babel-eslint": "10.0.3",
     "eslint": "6.5.1",
