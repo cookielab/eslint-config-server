@@ -16,10 +16,10 @@ module.exports = {
 		'import/default': 'error',
 		'import/dynamic-import-chunkname': 'off',
 		'import/export': 'error',
-		'import/exports-last': 'off',
+		'import/exports-last': 'error',
 		'import/extensions': ['error', 'never', {json: 'ignorePackages'}],
 		'import/first': 'error',
-		'import/group-exports': 'off',
+		'import/group-exports': 'error',
 		'import/imports-first': 'off', // deprecated, alias for "first"
 		'import/max-dependencies': 'off',
 		'import/named': 'error',

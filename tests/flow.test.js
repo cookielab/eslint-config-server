@@ -13,6 +13,8 @@ describe('Rules Configurations', () => {
 		const pluginRules = Object.keys(plugin.rules).map((ruleName) => `flowtype/${ruleName}`);
 		const overridenRuleNames = [
 			'no-duplicate-imports',
+			'import/exports-last',
+			'import/group-exports',
 			'import/no-cycle',
 		];
 

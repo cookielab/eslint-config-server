@@ -19,6 +19,8 @@ describe('Rules Configurations', () => {
 			'quotes',
 			'require-await',
 			'semi',
+			'import/exports-last',
+			'import/group-exports',
 			'import/no-cycle',
 		];
 
