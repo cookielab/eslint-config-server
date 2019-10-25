@@ -125,7 +125,7 @@ module.exports = {
 		'no-dupe-class-members': 'error',
 		'no-dupe-keys': 'error',
 		'no-duplicate-case': 'error',
-		'no-duplicate-imports': 'off',
+		'no-duplicate-imports': 'error',
 		'no-else-return': ['error', {
 			allowElseIf: false,
 		}],

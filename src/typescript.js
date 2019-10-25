@@ -18,7 +18,6 @@ module.exports = {
 		},
 	],
 	rules: {
-		'no-duplicate-imports': 'error',
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': ['error', {
 			default: 'array-simple',

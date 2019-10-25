@@ -15,7 +15,6 @@ describe('Rules Configurations', () => {
 			'brace-style',
 			'func-call-spacing',
 			'indent',
-			'no-duplicate-imports',
 			'no-empty-function',
 			'quotes',
 			'require-await',

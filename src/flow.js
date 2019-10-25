@@ -3,6 +3,7 @@ module.exports = {
 		'flowtype',
 	],
 	rules: {
+		'no-duplicate-imports': 'off', // to support separate imports of types
 		'flowtype/array-style-complex-type': 'off',
 		'flowtype/array-style-simple-type': 'off',
 		'flowtype/arrow-parens': ['error', 'always'],

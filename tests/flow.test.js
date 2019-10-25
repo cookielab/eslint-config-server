@@ -11,6 +11,9 @@ describe('Rules Configurations', () => {
 	describe('flow', () => {
 		const localRules = Object.keys(localConfig.rules);
 		const pluginRules = Object.keys(plugin.rules).map((ruleName) => `flowtype/${ruleName}`);
+		const overridenRuleNames = [
+			'no-duplicate-imports',
+		];
 
 		it('has configuration for all supported rules', () => {
 			const notConfiguredPluginRules = pluginRules.filter((ruleName) => !localRules.includes(ruleName));
@@ -19,7 +22,9 @@ describe('Rules Configurations', () => {
 		});
 
 		it('does not have configuration for not existing rules', () => {
-			const extraLocalRules = localRules.filter((ruleName) => !pluginRules.includes(ruleName));
+			const extraLocalRules = localRules
+				.filter((ruleName) => !pluginRules.includes(ruleName))
+				.filter((ruleName) => !overridenRuleNames.includes(ruleName));
 
 			expect(extraLocalRules).toEqual([]);
 		});
