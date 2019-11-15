@@ -24,6 +24,7 @@ module.exports = {
 		'@typescript-eslint/adjacent-overload-signatures': 'error',
 		'@typescript-eslint/array-type': ['error', {
 			default: 'array-simple',
+			readonly: 'array-simple',
 		}],
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-ts-ignore': 'off',
@@ -55,7 +56,9 @@ module.exports = {
 			},
 		}],
 		'brace-style': 'off',
-		'@typescript-eslint/brace-style': ['error', '1tbs'],
+		'@typescript-eslint/brace-style': ['error', '1tbs', {
+			allowSingleLine: false,
+		}],
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
 		'@typescript-eslint/class-name-casing': 'error',
 		'@typescript-eslint/consistent-type-assertions': ['error', {
@@ -63,7 +66,12 @@ module.exports = {
 			objectLiteralTypeAssertions: 'never',
 		}],
 		'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-		'@typescript-eslint/explicit-function-return-type': ['error', {allowExpressions: true}],
+		'@typescript-eslint/explicit-function-return-type': ['error', {
+			allowExpressions: true,
+			allowTypedFunctionExpressions: true,
+			allowHigherOrderFunctions: true,
+			allowDirectConstAssertionInArrowFunctions: true,
+		}],
 		'@typescript-eslint/explicit-member-accessibility': 'error',
 		'func-call-spacing': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/func-call-spacing': 'error',
@@ -71,7 +79,26 @@ module.exports = {
 		'indent': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/indent': ['error', 'tab', {
 			SwitchCase: 1,
+			VariableDeclarator: 1,
+			outerIIFEBody: 1,
 			MemberExpression: 1,
+			FunctionDeclaration: {
+				parameters: 1,
+				body: 1,
+			},
+			FunctionExpression: {
+				parameters: 1,
+				body: 1,
+			},
+			CallExpression: {
+				arguments: 1,
+			},
+			ArrayExpression: 1,
+			ObjectExpression: 1,
+			ImportDeclaration: 1,
+			flatTernaryExpressions: false,
+			ignoredNodes: undefined,
+			ignoreComments: false,
 		}],
 		'@typescript-eslint/interface-name-prefix': 'off',
 		'@typescript-eslint/member-delimiter-style': 'error',
@@ -89,7 +116,9 @@ module.exports = {
 		}],
 		'@typescript-eslint/no-extra-parens': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
-		'@typescript-eslint/no-floating-promises': 'error',
+		'@typescript-eslint/no-floating-promises': ['error', {
+			ignoreVoid: false,
+		}],
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-inferrable-types': 'off',
 		'@typescript-eslint/no-magic-numbers': 'off',
@@ -118,6 +147,7 @@ module.exports = {
 			allowCallbacks: 'always',
 			allowLiterals: 'always',
 			allowMappedTypes: 'always',
+			allowTupleTypes: 'always',
 		}],
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
@@ -138,6 +168,7 @@ module.exports = {
 		'quotes': 'off',
 		'@typescript-eslint/quotes': ['error', 'single', {
 			avoidEscape: true,
+			allowTemplateLiterals: true,
 		}],
 		'@typescript-eslint/require-array-sort-compare': 'off',
 		'require-await': 'off',
@@ -146,6 +177,7 @@ module.exports = {
 		'semi': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/semi': 'error',
 		'@typescript-eslint/strict-boolean-expressions': ['error', {
+			allowNullable: false,
 			ignoreRhs: false,
 		}],
 		'@typescript-eslint/triple-slash-reference': ['error', {

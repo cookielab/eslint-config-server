@@ -31,6 +31,7 @@ module.exports = {
 		'flowtype/require-inexact-type': 'off',
 		'flowtype/require-parameter-type': ['error', {
 			excludeArrowFunctions: 'expressionsOnly',
+			excludeParameterMatch: 'a^',
 		}],
 		'flowtype/require-readonly-react-props': 'error',
 		'flowtype/require-return-type': ['error', 'always', {
@@ -40,6 +41,7 @@ module.exports = {
 		'flowtype/require-types-at-top': 'off',
 		'flowtype/require-valid-file-annotation': ['error', 'always', {
 			annotationStyle: 'line',
+			strict: false,
 		}],
 		'flowtype/require-variable-type': 'off',
 		'flowtype/semi': ['error', 'always'],

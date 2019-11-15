@@ -4,18 +4,26 @@ module.exports = {
 	rules: {
 		'accessor-pairs': 'off',
 		'array-bracket-newline': ['error', 'consistent'],
-		'array-bracket-spacing': ['error', 'never'],
+		'array-bracket-spacing': ['error', 'never', {
+			singleValue: false,
+			objectsInArrays: false,
+			arraysInArrays: false,
+		}],
 		'array-callback-return': 'error',
 		'array-element-newline': ['error', 'consistent'],
 		'arrow-body-style': 'off',
-		'arrow-parens': ['error', 'always'],
+		'arrow-parens': ['error', 'always', {}],
 		'arrow-spacing': 'error',
 		'block-scoped-var': 'error',
 		'block-spacing': 'error',
-		'brace-style': ['error', '1tbs'],
+		'brace-style': ['error', '1tbs', {
+			allowSingleLine: false,
+		}],
 		'callback-return': 'off',
 		'camelcase': ['error', {
 			properties: 'never',
+			ignoreDestructuring: false,
+			allow: undefined,
 		}],
 		'capitalized-comments': 'off',
 		'class-methods-use-this': 'off',
@@ -60,6 +68,26 @@ module.exports = {
 		'implicit-arrow-linebreak': 'error',
 		'indent': ['error', 'tab', {
 			SwitchCase: 1,
+			VariableDeclarator: 1,
+			outerIIFEBody: 1,
+			MemberExpression: 1,
+			FunctionDeclaration: {
+				parameters: 1,
+				body: 1,
+			},
+			FunctionExpression: {
+				parameters: 1,
+				body: 1,
+			},
+			CallExpression: {
+				arguments: 1,
+			},
+			ArrayExpression: 1,
+			ObjectExpression: 1,
+			ImportDeclaration: 1,
+			flatTernaryExpressions: false,
+			ignoredNodes: [],
+			ignoreComments: false,
 		}],
 		'init-declarations': 'error',
 		'jsx-quotes': 'off',
@@ -71,10 +99,14 @@ module.exports = {
 			beforeLineComment: false,
 			allowBlockStart: true,
 			allowBlockEnd: true,
+			allowClassStart: true,
+			allowClassEnd: true,
 			allowObjectStart: true,
 			allowObjectEnd: true,
 			allowArrayStart: true,
 			allowArrayEnd: true,
+			ignorePattern: 'a^',
+			applyDefaultIgnorePatterns: true,
 		}],
 		'lines-between-class-members': ['error', 'always', {
 			exceptAfterSingleLine: true,
@@ -95,7 +127,13 @@ module.exports = {
 		'multiline-comment-style': 'error',
 		'multiline-ternary': 'off',
 		'new-cap': ['error', {
+			newIsCap: true,
 			capIsNew: false,
+			newIsCapExceptions: [],
+			newIsCapExceptionPattern: 'a^',
+			capIsNewExceptions: [],
+			capIsNewExceptionPattern: 'a^',
+			properties: true,
 		}],
 		'new-parens': 'error',
 		'newline-per-chained-call': 'error',
@@ -225,6 +263,7 @@ module.exports = {
 		'no-undef-init': 'error',
 		'no-undefined': 'off',
 		'no-underscore-dangle': ['error', {
+			allow: undefined,
 			allowAfterThis: true,
 			allowAfterSuper: false,
 			enforceInMethodNames: false,
@@ -235,7 +274,11 @@ module.exports = {
 		'no-unreachable': 'error',
 		'no-unsafe-finally': 'error',
 		'no-unsafe-negation': 'error',
-		'no-unused-expressions': 'error',
+		'no-unused-expressions': ['error', {
+			allowShortCircuit: false,
+			allowTernary: false,
+			allowTaggedTemplates: false,
+		}],
 		'no-unused-labels': 'error',
 		'no-unused-vars': 'error',
 		'no-use-before-define': 'error', // needs to be tested how it behaves in recursive call
@@ -254,12 +297,15 @@ module.exports = {
 		'no-with': 'error',
 		'nonblock-statement-body-position': 'off',
 		'object-curly-newline': ['error', {
-			ObjectExpression: {multiline: true, consistent: true},
-			ObjectPattern: {multiline: true, consistent: true},
-			ImportDeclaration: {multiline: true, consistent: true},
-			ExportDeclaration: {multiline: true, consistent: true},
+			ObjectExpression: {multiline: true, consistent: true, minProperties: Number.POSITIVE_INFINITY},
+			ObjectPattern: {multiline: true, consistent: true, minProperties: Number.POSITIVE_INFINITY},
+			ImportDeclaration: {multiline: true, consistent: true, minProperties: Number.POSITIVE_INFINITY},
+			ExportDeclaration: {multiline: true, consistent: true, minProperties: Number.POSITIVE_INFINITY},
 		}],
-		'object-curly-spacing': ['error', 'never'],
+		'object-curly-spacing': ['error', 'never', {
+			arraysInObjects: true,
+			objectsInObjects: true,
+		}],
 		'object-property-newline': ['error', {
 			allowAllPropertiesOnSameLine: true,
 		}],
@@ -267,11 +313,15 @@ module.exports = {
 		'one-var': ['error', 'never'],
 		'one-var-declaration-per-line': 'error',
 		'operator-assignment': ['error', 'never'],
-		'operator-linebreak': ['error', 'before'],
+		'operator-linebreak': ['error', 'before', {
+			overrides: {},
+		}],
 		'padded-blocks': ['error', {
 			classes: 'never',
 			blocks: 'never',
 			switches: 'never',
+		}, {
+			allowSingleLineBlocks: false,
 		}],
 		'padding-line-between-statements': [
 			'error',
@@ -299,6 +349,7 @@ module.exports = {
 		'quote-props': ['error', 'consistent-as-needed'],
 		'quotes': ['error', 'single', {
 			avoidEscape: true,
+			allowTemplateLiterals: true,
 		}],
 		'radix': 'error',
 		'require-atomic-updates': 'error',
@@ -330,10 +381,13 @@ module.exports = {
 		'unicode-bom': 'error',
 		'use-isnan': ['error', {
 			enforceForSwitchCase: true,
+			enforceForIndexOf: true,
 		}],
 		'valid-typeof': 'error',
 		'vars-on-top': 'off',
-		'wrap-iife': ['error', 'inside'],
+		'wrap-iife': ['error', 'inside', {
+			functionPrototypeMethods: false,
+		}],
 		'wrap-regex': 'off',
 		'yield-star-spacing': ['error', 'before'],
 		'yoda': 'error',

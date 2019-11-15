@@ -23,9 +23,18 @@ module.exports = {
 		'import/imports-first': 'off', // deprecated, alias for "first"
 		'import/max-dependencies': 'off',
 		'import/named': 'error',
-		'import/namespace': 'error',
-		'import/newline-after-import': 'error',
-		'import/no-absolute-path': 'error',
+		'import/namespace': ['error', {
+			allowComputed: false,
+		}],
+		'import/newline-after-import': ['error', {
+			count: 1,
+		}],
+		'import/no-absolute-path': ['error', {
+			esmodule: true,
+			commonjs: true,
+			amd: false,
+			ignore: undefined,
+		}],
 		'import/no-amd': 'error',
 		'import/no-anonymous-default-export': ['error', {
 			allowArray: true,
@@ -36,8 +45,17 @@ module.exports = {
 			allowLiteral: false,
 			allowObject: true,
 		}],
-		'import/no-commonjs': 'error',
-		'import/no-cycle': 'error',
+		'import/no-commonjs': ['error', {
+			allowRequire: false,
+			allowPrimitiveModules: false,
+		}],
+		'import/no-cycle': ['error', {
+			maxDepth: Infinity,
+			esmodule: true,
+			commonjs: false,
+			amd: false,
+			ignore: undefined,
+		}],
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'error',
 		'import/no-duplicates': 'error',
@@ -46,8 +64,11 @@ module.exports = {
 			devDependencies: ['**/tests/**/*'], // do not report dev dependencies in tests
 			optionalDependencies: true, // do not report optional dependencies
 			peerDependencies: true, // do not report peer dependencies
+			packageDir: undefined,
 		}],
-		'import/no-internal-modules': 'error',
+		'import/no-internal-modules': ['error', {
+			allow: undefined,
+		}],
 		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'error',
 		'import/no-named-as-default-member': 'error',
@@ -60,8 +81,17 @@ module.exports = {
 		'import/no-self-import': 'error',
 		'import/no-unassigned-import': ['error', {
 			allow: ['**/*.css', '*polyfill*'],
+			devDependencies: undefined, // in schema, but not in code
+			optionalDependencies: undefined, // in schema, but not in code
+			peerDependencies: undefined, // in schema, but not in code
 		}],
-		'import/no-unresolved': 'error',
+		'import/no-unresolved': ['error', {
+			caseSensitive: true,
+			esmodule: true,
+			commonjs: false,
+			amd: false,
+			ignore: undefined,
+		}],
 		'import/no-unused-modules': ['error', {
 			missingExports: false,
 			unusedExports: true,
@@ -70,6 +100,13 @@ module.exports = {
 		}],
 		'import/no-useless-path-segments': ['error', {
 			noUselessIndex: true,
+			commonjs: false,
+
+			/*
+			 * esmodule: true, // in code, but not in schema
+			 * amd: false, // in code, but not in schema
+			 * ignore: undefined, // in code, but not in schema
+			 */
 		}],
 		'import/no-webpack-loader-syntax': 'off',
 		'import/order': 'off',
