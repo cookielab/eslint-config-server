@@ -16,6 +16,7 @@ describe('Rules Configurations', () => {
 			'func-call-spacing',
 			'indent',
 			'no-empty-function',
+			'no-unused-expressions',
 			'quotes',
 			'require-await',
 			'semi',

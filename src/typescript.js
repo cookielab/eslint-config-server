@@ -98,6 +98,12 @@ module.exports = {
 		'@typescript-eslint/no-namespace': 'error',
 		'@typescript-eslint/no-non-null-assertion': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
+		'no-unused-expressions': 'off',
+		'@typescript-eslint/no-unused-expressions': ['error', {
+			allowShortCircuit: false,
+			allowTernary: false,
+			allowTaggedTemplates: false,
+		}],
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
