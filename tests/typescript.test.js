@@ -45,7 +45,7 @@ describe('Rules Configurations', () => {
 			if (rule.meta != null && rule.meta.schema != null && Array.isArray(rule.meta.schema) && rule.meta.schema.length > 0) {
 				it(`rule "${ruleName}" has valid configuration`, async () => {
 					const schemas = rule.meta.schema;
-					const localRule = localConfig.rules[ruleName];
+					const localRule = localConfig.rules[`@typescript-eslint/${ruleName}`];
 					if (Array.isArray(localRule) && localRule.length > 1) {
 						const configurations = localRule.slice(1);
 						for (let index = 0; index < configurations.length; index++) {
