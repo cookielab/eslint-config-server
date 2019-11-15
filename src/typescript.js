@@ -83,7 +83,10 @@ module.exports = {
 		'@typescript-eslint/no-empty-interface': ['error', {
 			allowSingleExtends: true,
 		}],
-		'@typescript-eslint/no-explicit-any': 'error',
+		'@typescript-eslint/no-explicit-any': ['error', {
+			fixToUnknown: true,
+			ignoreRestArgs: false,
+		}],
 		'@typescript-eslint/no-extra-parens': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-floating-promises': 'error',
