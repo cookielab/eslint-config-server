@@ -111,7 +111,7 @@ module.exports = {
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
 		'@typescript-eslint/no-unnecessary-condition': ['error', {
-			ignoreRhs: true,
+			ignoreRhs: false,
 		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
