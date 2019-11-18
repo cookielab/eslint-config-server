@@ -62,7 +62,12 @@ module.exports = {
 			allow: ['**/*.css', '*polyfill*'],
 		}],
 		'import/no-unresolved': 'error',
-		'import/no-unused-modules': 'error',
+		'import/no-unused-modules': ['error', {
+			missingExports: false,
+			unusedExports: true,
+			src: undefined,
+			ignoreExports: undefined,
+		}],
 		'import/no-useless-path-segments': ['error', {
 			noUselessIndex: true,
 		}],
