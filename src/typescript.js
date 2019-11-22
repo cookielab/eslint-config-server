@@ -105,6 +105,7 @@ module.exports = {
 		'@typescript-eslint/member-naming': 'off',
 		'@typescript-eslint/member-ordering': 'error',
 		'@typescript-eslint/no-array-constructor': 'error',
+		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'error',
 		'@typescript-eslint/no-empty-interface': ['error', {
@@ -114,6 +115,7 @@ module.exports = {
 			fixToUnknown: true,
 			ignoreRestArgs: false,
 		}],
+		'@typescript-eslint/no-extra-non-null-assertion': 'error',
 		'@typescript-eslint/no-extra-parens': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-floating-promises': ['error', {
@@ -136,15 +138,28 @@ module.exports = {
 			allowTernary: false,
 			allowTaggedTemplates: false,
 		}],
-		'@typescript-eslint/no-unused-vars': 'error',
+		'no-unused-vars': 'off',
+		'@typescript-eslint/no-unused-vars': ['error', {
+			vars: 'all',
+			varsIgnorePattern: 'a^',
+			args: 'after-used',
+			ignoreRestSiblings: false,
+			argsIgnorePattern: 'a^',
+			caughtErrors: 'none',
+			caughtErrorsIgnorePattern: 'a^',
+		}],
+		'@typescript-eslint/no-unused-vars-experimental': 'off',
 		'@typescript-eslint/no-require-imports': 'error',
 		'@typescript-eslint/no-this-alias': 'error',
 		'@typescript-eslint/no-unnecessary-condition': ['error', {
 			ignoreRhs: false,
+			allowConstantLoopConditions: false,
 		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
 			allowCallbacks: 'always',
+			allowConditionalTypes: 'always',
+			allowConstructors: 'never',
 			allowLiterals: 'always',
 			allowMappedTypes: 'always',
 			allowTupleTypes: 'always',
@@ -152,6 +167,9 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-arguments': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
+		'@typescript-eslint/no-untyped-public-signature': ['error', {
+			ignoredMethods: [],
+		}],
 		'@typescript-eslint/no-use-before-define': 'error', // need to be tested with eslint no-use-before-define
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
@@ -159,6 +177,11 @@ module.exports = {
 		'@typescript-eslint/prefer-function-type': 'off',
 		'@typescript-eslint/prefer-includes': 'error',
 		'@typescript-eslint/prefer-namespace-keyword': 'off',
+		'@typescript-eslint/prefer-nullish-coalescing': ['error', {
+			ignoreConditionalTests: true,
+			ignoreMixedLogicalExpressions: true,
+		}],
+		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': ['error', {
 			onlyInlineLambdas: false,
 		}],
@@ -174,8 +197,20 @@ module.exports = {
 		'require-await': 'off',
 		'@typescript-eslint/require-await': 'error',
 		'@typescript-eslint/restrict-plus-operands': 'error',
+		'@typescript-eslint/restrict-template-expressions': ['error', {
+			allowNumber: true,
+			allowBoolean: false,
+			allowNullable: false,
+		}],
+		'@typescript-eslint/return-await': ['error', 'always'],
 		'semi': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/semi': 'error',
+		'space-before-function-paren': 'off',
+		'@typescript-eslint/space-before-function-paren': ['error', {
+			anonymous: 'always',
+			named: 'never',
+			asyncArrow: 'always',
+		}],
 		'@typescript-eslint/strict-boolean-expressions': ['error', {
 			allowNullable: false,
 			ignoreRhs: false,
