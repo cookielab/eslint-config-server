@@ -97,7 +97,7 @@ module.exports = {
 			ObjectExpression: 1,
 			ImportDeclaration: 1,
 			flatTernaryExpressions: false,
-			ignoredNodes: undefined,
+			ignoredNodes: [],
 			ignoreComments: false,
 		}],
 		'@typescript-eslint/interface-name-prefix': 'off',

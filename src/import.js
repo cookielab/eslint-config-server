@@ -33,7 +33,7 @@ module.exports = {
 			esmodule: true,
 			commonjs: true,
 			amd: false,
-			ignore: undefined,
+			ignore: ['a^'],
 		}],
 		'import/no-amd': 'error',
 		'import/no-anonymous-default-export': ['error', {
@@ -54,7 +54,7 @@ module.exports = {
 			esmodule: true,
 			commonjs: false,
 			amd: false,
-			ignore: undefined,
+			ignore: ['a^'],
 		}],
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'error',
@@ -64,10 +64,10 @@ module.exports = {
 			devDependencies: ['**/tests/**/*'], // do not report dev dependencies in tests
 			optionalDependencies: true, // do not report optional dependencies
 			peerDependencies: true, // do not report peer dependencies
-			packageDir: undefined,
+			packageDir: [],
 		}],
 		'import/no-internal-modules': ['error', {
-			allow: undefined,
+			allow: [],
 		}],
 		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'error',
@@ -81,16 +81,16 @@ module.exports = {
 		'import/no-self-import': 'error',
 		'import/no-unassigned-import': ['error', {
 			allow: ['**/*.css', '*polyfill*'],
-			devDependencies: undefined, // in schema, but not in code
-			optionalDependencies: undefined, // in schema, but not in code
-			peerDependencies: undefined, // in schema, but not in code
+			devDependencies: [], // in schema, but not in code
+			optionalDependencies: [], // in schema, but not in code
+			peerDependencies: [], // in schema, but not in code
 		}],
 		'import/no-unresolved': ['error', {
 			caseSensitive: true,
 			esmodule: true,
 			commonjs: false,
 			amd: false,
-			ignore: undefined,
+			ignore: ['a^'],
 		}],
 		'import/no-unused-modules': ['error', {
 			missingExports: false,
@@ -105,7 +105,7 @@ module.exports = {
 			/*
 			 * esmodule: true, // in code, but not in schema
 			 * amd: false, // in code, but not in schema
-			 * ignore: undefined, // in code, but not in schema
+			 * ignore: ['a^'], // in code, but not in schema
 			 */
 		}],
 		'import/no-webpack-loader-syntax': 'off',

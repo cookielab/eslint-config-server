@@ -23,7 +23,7 @@ module.exports = {
 		'camelcase': ['error', {
 			properties: 'never',
 			ignoreDestructuring: false,
-			allow: undefined,
+			allow: [],
 		}],
 		'capitalized-comments': 'off',
 		'class-methods-use-this': 'off',
@@ -267,7 +267,7 @@ module.exports = {
 		'no-undef-init': 'error',
 		'no-undefined': 'off',
 		'no-underscore-dangle': ['error', {
-			allow: undefined,
+			allow: [],
 			allowAfterThis: true,
 			allowAfterSuper: false,
 			enforceInMethodNames: false,
