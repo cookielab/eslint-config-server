@@ -315,8 +315,8 @@ module.exports = {
 			ExportDeclaration: {multiline: true, consistent: true, minProperties: Number.POSITIVE_INFINITY},
 		}],
 		'object-curly-spacing': ['error', 'never', {
-			arraysInObjects: true,
-			objectsInObjects: true,
+			arraysInObjects: false,
+			objectsInObjects: false,
 		}],
 		'object-property-newline': ['error', {
 			allowAllPropertiesOnSameLine: true,
