@@ -1,6 +1,6 @@
 {
   "name": "@cookielab.io/eslint-config-server",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Code Style",
   "keywords": [
     "eslint",
