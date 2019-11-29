@@ -66,9 +66,13 @@ module.exports = {
 			peerDependencies: true, // do not report peer dependencies
 			packageDir: [],
 		}],
-		'import/no-internal-modules': ['error', {
-			allow: [],
-		}],
+
+		/*
+		 * Turned off because it handles internal modules of the package itself (in terms of using files in sub-folders)
+		 * without an option to disable internal modules of external packages only so using relative directories in
+		 * the code is not possible.
+		 */
+		'import/no-internal-modules': 'off',
 		'import/no-mutable-exports': 'error',
 		'import/no-named-as-default': 'error',
 		'import/no-named-as-default-member': 'error',
