@@ -96,12 +96,7 @@ module.exports = {
 			amd: false,
 			ignore: ['a^'],
 		}],
-		'import/no-unused-modules': ['error', {
-			missingExports: false,
-			unusedExports: true,
-			src: undefined,
-			ignoreExports: undefined,
-		}],
+		'import/no-unused-modules': 'off', // https://github.com/benmosher/eslint-plugin-import/issues/1555
 		'import/no-useless-path-segments': ['error', {
 			noUselessIndex: true,
 			commonjs: false,
