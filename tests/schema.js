@@ -39,7 +39,8 @@ const restrictSchema = (schema) => {
 
 const getValueByPath = (value, path) => {
 	const key = path.length > 0 ? path[0] : null;
-	return key != null
+
+	return key != null && key !== ''
 		? getValueByPath(value[key], path.slice(1))
 		: value;
 };
