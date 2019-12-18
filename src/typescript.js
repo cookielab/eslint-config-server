@@ -107,7 +107,12 @@ module.exports = {
 		'@typescript-eslint/no-array-constructor': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
-		'@typescript-eslint/no-empty-function': 'error',
+		'@typescript-eslint/no-empty-function': ['error', {
+			allow: [
+				'private-constructors',
+				'protected-constructors',
+			],
+		}],
 		'@typescript-eslint/no-empty-interface': ['error', {
 			allowSingleExtends: true,
 		}],
@@ -180,6 +185,7 @@ module.exports = {
 		'@typescript-eslint/prefer-nullish-coalescing': ['error', {
 			ignoreConditionalTests: true,
 			ignoreMixedLogicalExpressions: true,
+			forceSuggestionFixer: true,
 		}],
 		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': ['error', {

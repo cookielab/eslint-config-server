@@ -48,6 +48,7 @@ module.exports = {
 		'import/no-commonjs': ['error', {
 			allowRequire: false,
 			allowPrimitiveModules: false,
+			allowConditionalRequire: true,
 		}],
 		'import/no-cycle': ['error', {
 			maxDepth: Infinity,
@@ -64,6 +65,7 @@ module.exports = {
 			devDependencies: ['**/tests/**/*'], // do not report dev dependencies in tests
 			optionalDependencies: true, // do not report optional dependencies
 			peerDependencies: true, // do not report peer dependencies
+			bundledDependencies: false, // do report bundled dependencies
 			packageDir: [],
 		}],
 
