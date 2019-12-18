@@ -1,5 +1,6 @@
 const Ajv = require('ajv');
 const {validateRuleOptions, getRuleOptionsSchema} = require('eslint/lib/shared/config-validator');
+const clone = require('clone');
 const localConfig = require('../src/filenames');
 const plugin = require('eslint-plugin-filenames');
 const {restrictSchema, processErrors} = require('./schema');
@@ -32,7 +33,7 @@ describe('Rules Configurations', () => {
 				const localRule = localConfig.rules[`filenames/${ruleName}`];
 
 				it('has valid configuration', () => {
-					validateRuleOptions(rule, ruleName, localRule);
+					validateRuleOptions(rule, ruleName, clone(localRule));
 				});
 
 				const status = Array.isArray(localRule) ? localRule[0] : localRule;

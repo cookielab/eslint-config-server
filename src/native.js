@@ -12,7 +12,9 @@ module.exports = {
 		'array-callback-return': 'error',
 		'array-element-newline': ['error', 'consistent'],
 		'arrow-body-style': 'off',
-		'arrow-parens': ['error', 'always', {}],
+		'arrow-parens': ['error', 'always', {
+			requireForBlockBody: false,
+		}],
 		'arrow-spacing': 'error',
 		'block-scoped-var': 'error',
 		'block-spacing': 'error',
@@ -23,6 +25,7 @@ module.exports = {
 		'camelcase': ['error', {
 			properties: 'never',
 			ignoreDestructuring: false,
+			ignoreImports: false,
 			allow: [],
 		}],
 		'capitalized-comments': 'off',
@@ -97,7 +100,10 @@ module.exports = {
 		'line-comment-position': 'off',
 		'linebreak-style': 'error',
 		'lines-around-comment': ['error', {
+			beforeBlockComment: true,
+			afterBlockComment: false,
 			beforeLineComment: false,
+			afterLineComment: false,
 			allowBlockStart: true,
 			allowBlockEnd: true,
 			allowClassStart: true,
@@ -271,6 +277,7 @@ module.exports = {
 		'no-underscore-dangle': ['error', {
 			allow: [],
 			allowAfterThis: true,
+			allowAfterThisConstructor: false,
 			allowAfterSuper: false,
 			enforceInMethodNames: false,
 		}],
@@ -322,6 +329,7 @@ module.exports = {
 		}],
 		'object-property-newline': ['error', {
 			allowAllPropertiesOnSameLine: true,
+			allowMultiplePropertiesPerLine: false,
 		}],
 		'object-shorthand': ['error', 'consistent'],
 		'one-var': ['error', 'never'],
