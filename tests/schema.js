@@ -1,9 +1,18 @@
 const restrictSchema = (schema) => {
-	if (schema.type === 'array') {
+	const types = Array.isArray(schema.type)
+		? schema.type
+		: [schema.type];
+	if (types.includes('array')) {
 		if (schema.items != null) {
 			schema.items = Array.isArray(schema.items)
 				? schema.items.map(restrictSchema)
 				: restrictSchema(schema.items);
+		}
+
+		if (schema.maxItems != null && schema.maxItems > 0) {
+			schema.minItems = schema.maxItems;
+		} else if (Array.isArray(schema.items) && schema.minItems == null) {
+			schema.minItems = schema.items.length;
 		}
 	} else if (schema.properties != null) {
 		schema.additionalProperties = false;
@@ -20,11 +29,14 @@ const restrictSchema = (schema) => {
 			const types = Array.isArray(property.type)
 				? property.type
 				: [property.type];
-			if (types.includes('array')) {
-				return property.minItems != null && property.maxItems != null && property.minItems === property.maxItems;
-			} else {
-				return true;
+			if (types.includes('array') && types.length === 1) {
+				return (
+					(property.minItems != null && property.maxItems != null && property.minItems === property.maxItems) // the array must have exact length
+					|| property.minItems == null // It is possible to use empty array
+				);
 			}
+
+			return true;
 		});
 	} else if (Array.isArray(schema.oneOf)) {
 		schema.oneOf = schema.oneOf.map(restrictSchema);

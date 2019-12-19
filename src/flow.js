@@ -9,10 +9,12 @@ module.exports = {
 		'import/no-cycle': 'off', // to support importing types
 		'flowtype/array-style-complex-type': 'off',
 		'flowtype/array-style-simple-type': 'off',
-		'flowtype/arrow-parens': ['error', 'always'],
+		'flowtype/arrow-parens': ['error', 'always', {
+			requireForBlockBody: false,
+		}],
 		'flowtype/boolean-style': ['error', 'boolean'],
 		'flowtype/define-flow-type': 'warn',
-		'flowtype/delimiter-dangle': ['error', 'only-multiline'],
+		'flowtype/delimiter-dangle': ['error', 'only-multiline', 'only-multiline', 'never'],
 		'flowtype/generic-spacing': ['error', 'never'],
 		'flowtype/newline-after-flow-annotation': 'off',
 		'flowtype/no-dupe-keys': 'error',
@@ -23,7 +25,11 @@ module.exports = {
 		'flowtype/no-primitive-constructor-types': 'off',
 		'flowtype/no-types-missing-file-annotation': 'error',
 		'flowtype/no-unused-expressions': 'off',
-		'flowtype/no-weak-types': 'error',
+		'flowtype/no-weak-types': ['error', {
+			any: true,
+			Function: true,
+			Object: true,
+		}],
 		'flowtype/object-type-delimiter': ['error', 'comma'],
 		'flowtype/require-compound-type-alias': 'off',
 		'flowtype/require-exact-type': 'off',
@@ -37,6 +43,8 @@ module.exports = {
 		'flowtype/require-return-type': ['error', 'always', {
 			excludeArrowFunctions: 'expressionsOnly',
 			annotateUndefined: 'always',
+			excludeMatching: [],
+			includeOnlyMatching: [],
 		}],
 		'flowtype/require-types-at-top': 'off',
 		'flowtype/require-valid-file-annotation': ['error', 'always', {
@@ -46,10 +54,12 @@ module.exports = {
 		'flowtype/require-variable-type': 'off',
 		'flowtype/semi': ['error', 'always'],
 		'flowtype/sort-keys': 'off',
-		'flowtype/space-after-type-colon': ['error', 'always'],
+		'flowtype/space-after-type-colon': ['error', 'always', {
+			allowLineBreak: false,
+		}],
 		'flowtype/space-before-generic-bracket': ['error', 'never'],
 		'flowtype/space-before-type-colon': ['error', 'never'],
-		'flowtype/spread-exact-type': 'error',
+		'flowtype/spread-exact-type': ['error', 'always'],
 		'flowtype/type-id-match': 'off',
 		'flowtype/type-import-style': 'off',
 		'flowtype/union-intersection-spacing': ['error', 'always'],

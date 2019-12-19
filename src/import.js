@@ -59,7 +59,9 @@ module.exports = {
 		}],
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'error',
-		'import/no-duplicates': 'error',
+		'import/no-duplicates': ['error', {
+			considerQueryString: false,
+		}],
 		'import/no-dynamic-require': 'error',
 		'import/no-extraneous-dependencies': ['error', {
 			devDependencies: ['**/tests/**/*'], // do not report dev dependencies in tests
