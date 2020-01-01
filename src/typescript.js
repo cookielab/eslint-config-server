@@ -276,6 +276,8 @@ module.exports = {
 		}],
 		'@typescript-eslint/no-extra-non-null-assertion': 'error',
 		'@typescript-eslint/no-extra-parens': 'off',
+		'no-extra-semi': 'off',
+		'@typescript-eslint/no-extra-semi': 'error',
 		'@typescript-eslint/no-extraneous-class': ['error', {
 			allowConstructorOnly: false,
 			allowEmpty: false,
@@ -299,6 +301,7 @@ module.exports = {
 		}],
 		'@typescript-eslint/no-non-null-assertion': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
+		'@typescript-eslint/no-throw-literal': 'error',
 		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': ['error', {
 			allowShortCircuit: false,
@@ -345,6 +348,7 @@ module.exports = {
 		'@typescript-eslint/no-use-before-define': ['error', {
 			functions: true,
 			classes: true,
+			enums: true,
 			variables: true,
 			typedefs: true,
 		}], // need to be tested with eslint no-use-before-define

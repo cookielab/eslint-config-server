@@ -19,6 +19,7 @@ describe('Rules Configurations', () => {
 			'func-call-spacing',
 			'indent',
 			'no-empty-function',
+			'no-extra-semi',
 			'no-unused-expressions',
 			'no-unused-vars',
 			'quotes',
