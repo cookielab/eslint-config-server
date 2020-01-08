@@ -288,6 +288,7 @@ module.exports = {
 			ignoreVoid: false,
 		}],
 		'@typescript-eslint/no-for-in-array': 'error',
+		'@typescript-eslint/no-implied-eval': 'error',
 		'@typescript-eslint/no-inferrable-types': 'off',
 		'@typescript-eslint/no-magic-numbers': 'off',
 		'@typescript-eslint/no-misused-new': 'error',
@@ -399,6 +400,7 @@ module.exports = {
 		}],
 		'@typescript-eslint/strict-boolean-expressions': ['error', {
 			allowNullable: false,
+			allowSafe: false,
 			ignoreRhs: false,
 		}],
 		'@typescript-eslint/triple-slash-reference': ['error', {
