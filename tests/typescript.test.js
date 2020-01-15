@@ -57,7 +57,10 @@ describe('Rules Configurations', () => {
 				const status = Array.isArray(localRule) ? localRule[0] : localRule;
 				const schema = getRuleOptionsSchema(rule);
 				const configuration = Array.isArray(localRule) ? localRule.slice(1) : [];
-				if (status !== 'off' && schema != null) {
+				if (
+					status !== 'off' && schema != null
+					&& ruleName !== 'naming-convention' // do not check exhaustiveness for rule with too generic options
+				) {
 					it('has exhaustive configuration', () => {
 						const strictSchema = restrictSchema(schema);
 						const valid = ajv.validate(strictSchema, configuration);

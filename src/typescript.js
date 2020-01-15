@@ -68,6 +68,7 @@ module.exports = {
 			objectLiteralTypeAssertions: 'never',
 		}],
 		'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+		'@typescript-eslint/default-param-last': 'error',
 		'@typescript-eslint/explicit-function-return-type': ['error', {
 			allowExpressions: true,
 			allowTypedFunctionExpressions: true,
@@ -258,6 +259,40 @@ module.exports = {
 			interfaces: ['signature', 'field', 'constructor', 'method'],
 			typeLiterals: ['signature', 'field', 'constructor', 'method'],
 		}],
+		'@typescript-eslint/naming-convention': [
+			'error',
+			{
+				selector: 'default',
+				format: ['camelCase'],
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+			},
+			{
+				selector: 'variable',
+				format: ['camelCase', 'UPPER_CASE'],
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+			},
+			{
+				selector: 'variable',
+				format: ['camelCase'],
+				types: ['function'],
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+			},
+			{
+				selector: 'enumMember',
+				format: ['UPPER_CASE'],
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+			},
+			{
+				selector: 'typeLike',
+				format: ['PascalCase'],
+				leadingUnderscore: 'forbid',
+				trailingUnderscore: 'forbid',
+			},
+		],
 		'@typescript-eslint/no-array-constructor': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
@@ -328,6 +363,7 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-condition': ['error', {
 			ignoreRhs: false,
 			allowConstantLoopConditions: false,
+			checkArrayPredicates: true,
 		}],
 		'@typescript-eslint/no-type-alias': ['error', {
 			allowAliases: 'in-unions-and-intersections',
