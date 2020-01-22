@@ -57,7 +57,7 @@ describe('Rules Configurations', () => {
 					});
 				} else if (configuration.length > 0) {
 					// eslint-disable-next-line no-empty-function
-					it.skip(`rule "${ruleName}" has configuration but does not have schema => check the documentation and the code of the rule and update configuration or send a pull request adding the schema to the rule`, () => {});
+					it.skip(`rule "flowtype/${ruleName}" has configuration but does not have schema => check the documentation and the code of the rule and update configuration or send a pull request adding the schema to the rule`, () => {});
 				}
 			});
 		}
