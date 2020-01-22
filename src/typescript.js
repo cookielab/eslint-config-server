@@ -86,6 +86,7 @@ module.exports = {
 			},
 			ignoredMethodNames: [],
 		}],
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'func-call-spacing': 'off', // Disable base rule to avoid errors
 		'@typescript-eslint/func-call-spacing': ['error', 'never'],
 		'@typescript-eslint/generic-type-naming': 'off',
@@ -336,6 +337,7 @@ module.exports = {
 			allowDefinitionFiles: true,
 		}],
 		'@typescript-eslint/no-non-null-assertion': 'error',
+		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 		'@typescript-eslint/no-parameter-properties': 'off',
 		'@typescript-eslint/no-throw-literal': 'error',
 		'no-unused-expressions': 'off',
