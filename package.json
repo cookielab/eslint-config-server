@@ -14,7 +14,7 @@
     "url": "https://github.com/cookielab/eslint-config-server.git"
   },
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=10.13.0"
   },
   "peerDependencies": {
     "@cookielab.io/eslint-plugin-custom-rules": "optional:^0.3.0",
