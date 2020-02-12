@@ -27,6 +27,11 @@ module.exports = {
 			readonly: 'array-simple',
 		}],
 		'@typescript-eslint/await-thenable': 'error',
+		'@typescript-eslint/ban-ts-comment': ['error', {
+			'ts-ignore': false,
+			'ts-nocheck': true,
+			'ts-check': false,
+		}],
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		'@typescript-eslint/ban-types': ['error', {
 			types: {
@@ -62,6 +67,11 @@ module.exports = {
 		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
 		'@typescript-eslint/class-name-casing': ['error', {
 			allowUnderscorePrefix: false,
+		}],
+		'comma-spacing': 'off',
+		'@typescript-eslint/comma-spacing': ['error', {
+			before: false,
+			after: true,
 		}],
 		'@typescript-eslint/consistent-type-assertions': ['error', {
 			assertionStyle: 'as',
@@ -295,6 +305,8 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/no-array-constructor': 'error',
+		'no-no-dupe-class-members': 'off',
+		'@typescript-eslint/no-dupe-class-members': 'error',
 		'@typescript-eslint/no-dynamic-delete': 'error',
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': ['error', {
@@ -362,6 +374,7 @@ module.exports = {
 			allowDestructuring: true,
 			allowedNames: [],
 		}],
+		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 		'@typescript-eslint/no-unnecessary-condition': ['error', {
 			ignoreRhs: false,
 			allowConstantLoopConditions: false,
@@ -393,6 +406,7 @@ module.exports = {
 		}], // need to be tested with eslint no-use-before-define
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'error',
+		'@typescript-eslint/prefer-as-const': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-function-type': 'off',
 		'@typescript-eslint/prefer-includes': 'error',
@@ -441,6 +455,7 @@ module.exports = {
 			allowSafe: false,
 			ignoreRhs: false,
 		}],
+		'@typescript-eslint/switch-exhaustiveness-check': 'error',
 		'@typescript-eslint/triple-slash-reference': ['error', {
 			path: 'never',
 			types: 'never',

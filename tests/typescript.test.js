@@ -16,8 +16,10 @@ describe('Rules Configurations', () => {
 		const pluginRules = Object.keys(plugin.rules).map((ruleName) => `@typescript-eslint/${ruleName}`);
 		const overridenRuleNames = [
 			'brace-style',
+			'comma-spacing',
 			'func-call-spacing',
 			'indent',
+			'no-no-dupe-class-members',
 			'no-empty-function',
 			'no-extra-semi',
 			'no-unused-expressions',
