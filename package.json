@@ -1,5 +1,5 @@
 {
-  "name": "@cookielab.io/eslint-config-server",
+  "name": "@cookielab.io/eslint-config-typescript",
   "version": "4.0.0",
   "description": "Code Style",
   "keywords": [
@@ -11,7 +11,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cookielab/eslint-config-server.git"
+    "url": "https://github.com/cookielab/eslint-config-typescript.git"
   },
   "engines": {
     "node": ">=10.13.0"
