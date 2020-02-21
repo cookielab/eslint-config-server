@@ -1,8 +1,15 @@
 module.exports = {
+	env: {
+		es6: true,
+		node: true,
+		jasmine: true,
+		jest: true,
+	},
 	extends: [
-		'./src/index.js',
+		'./src/native.js',
+		'./src/filenames.js',
+		'./src/import.js',
 		'./src/typescript.js',
-		'./src/sortImportsES6.js',
 	],
 	settings: {
 		'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],

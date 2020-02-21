@@ -1,7 +1,5 @@
 **/*
 !src/**/*
-!babel.js
-!flow.js
 !LICENSE.md
 !package.json
-!typescript.js
+!index.js

@@ -64,7 +64,14 @@ module.exports = {
 		'@typescript-eslint/brace-style': ['error', '1tbs', {
 			allowSingleLine: false,
 		}],
-		'@typescript-eslint/camelcase': 'off', // Used in general eslint rules,
+		'camelcase': 'off',
+		'@typescript-eslint/camelcase': ['error', {
+			properties: 'never',
+			ignoreDestructuring: false,
+			ignoreImports: false,
+			allow: [],
+			genericType: 'never',
+		}],
 		'@typescript-eslint/class-name-casing': ['error', {
 			allowUnderscorePrefix: false,
 		}],

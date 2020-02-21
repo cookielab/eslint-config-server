@@ -117,7 +117,7 @@ module.exports = {
 			ignoreComments: false,
 		}],
 		'init-declarations': ['error', 'always'],
-		'jsx-quotes': 'off',
+		'jsx-quotes': ['error', 'prefer-double'],
 		'key-spacing': ['error', {
 			beforeColon: false,
 			afterColon: true,
@@ -455,7 +455,7 @@ module.exports = {
 		'no-alert': 'error',
 		'no-array-constructor': 'error',
 		'no-async-promise-executor': 'error',
-		'no-await-in-loop': 'off',
+		'no-await-in-loop': 'error',
 		'no-bitwise': ['error', {
 			allow: [],
 			int32Hint: false,
@@ -778,7 +778,7 @@ module.exports = {
 			after: true,
 		}],
 		'semi-style': ['error', 'last'],
-		'sort-imports': 'off', // enabled for specific languages
+		'sort-imports': 'off',
 		'sort-keys': 'off',
 		'sort-vars': 'off',
 		'space-before-blocks': ['error', 'always'],

@@ -2,16 +2,6 @@ module.exports = {
 	plugins: [
 		'import',
 	],
-	overrides: [
-		{
-			files: [
-				'*.test.js',
-			],
-			rules: {
-				'import/no-internal-modules': 'off',
-			},
-		},
-	],
 	rules: {
 		'import/default': 'error',
 		'import/dynamic-import-chunkname': 'off',
@@ -117,7 +107,19 @@ module.exports = {
 			 */
 		}],
 		'import/no-webpack-loader-syntax': 'off',
-		'import/order': 'off',
+		'import/order': ['error', {
+			'groups': [
+				['builtin', 'external'],
+				['parent', 'sibling', 'index'],
+			],
+			'newlines-between': 'always',
+			'pathGroupsExcludedImportTypes': [],
+			'pathGroups': [],
+			'alphabetize': {
+				order: 'ignore',
+				caseInsensitive: false,
+			},
+		}],
 		'import/prefer-default-export': 'off',
 		'import/unambiguous': 'off',
 	},

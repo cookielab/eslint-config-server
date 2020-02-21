@@ -17,6 +17,7 @@ describe('Rules Configurations', () => {
 		const overridenRuleNames = [
 			'brace-style',
 			'comma-spacing',
+			'camelcase',
 			'func-call-spacing',
 			'indent',
 			'no-no-dupe-class-members',
